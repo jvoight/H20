@@ -1,0 +1,60 @@
+Loading "csg1-lev48.dat"
+Loading "csg1-lev40.dat"
+Loading "csg1-lev32.dat"
+Loading "csg1-lev24.dat"
+Loading "csg1-lev16.dat"
+Loading "csg1-lev8.dat"
+Loading "csg1-lev0.dat"
+Loading "csg0-lev48.dat"
+Loading "csg0-lev32.dat"
+Loading "csg0-lev24.dat"
+Loading "csg0-lev16.dat"
+Loading "csg0-lev8.dat"
+Loading "csg0-lev0.dat"
+3D0: 2 congruence lifts; 1 with pg=2; 1 SL classes
+4D0: 2 congruence lifts; 1 with pg=2; 1 SL classes
+4E0: 8 congruence lifts; 1 with pg=2; 1 SL classes
+4G0: 8 congruence lifts; 3 with pg=2; 1 SL classes
+5D0: 2 congruence lifts; 1 with pg=2; 1 SL classes
+5F0: 2 congruence lifts; 1 with pg=2; 1 SL classes
+6A0: 1 congruence lifts; 1 with pg=2; 1 SL classes
+6C0: 2 congruence lifts; 1 with pg=2; 1 SL classes
+6F0: 4 congruence lifts; 1 with pg=2; 1 SL classes
+6I0: 8 congruence lifts; 3 with pg=2; 1 SL classes
+6K0: 4 congruence lifts; 1 with pg=2; 1 SL classes
+7B0: 2 congruence lifts; 1 with pg=2; 1 SL classes
+7E0: 2 congruence lifts; 0 with pg=2; 0 SL classes
+8C0: 8 congruence lifts; 1 with pg=2; 1 SL classes
+8G0: 8 congruence lifts; 3 with pg=2; 2 SL classes
+8I0: 4 congruence lifts; 2 with pg=2; 2 SL classes
+8J0: 4 congruence lifts; 2 with pg=2; 2 SL classes
+9B0: 2 congruence lifts; 1 with pg=2; 1 SL classes
+9C0: 2 congruence lifts; 1 with pg=2; 1 SL classes
+9H0: 2 congruence lifts; 1 with pg=2; 1 SL classes
+9I0: 2 congruence lifts; 1 with pg=2; 1 SL classes
+10F0: 4 congruence lifts; 1 with pg=2; 1 SL classes
+12E0: 8 congruence lifts; 3 with pg=2; 2 SL classes
+16C0: 8 congruence lifts; 3 with pg=2; 2 SL classes
+16D0: 4 congruence lifts; 2 with pg=2; 2 SL classes
+18E0: 4 congruence lifts; 1 with pg=2; 1 SL classes
+27A0: 2 congruence lifts; 1 with pg=2; 1 SL classes
+6B1: 2 congruence lifts; 2 with pg=2; 2 SL classes
+6C1: 16 congruence lifts; 12 with pg=2; 2 SL classes
+6D1: 2 congruence lifts; 1 with pg=2; 1 SL classes
+8A1: 8 congruence lifts; 4 with pg=2; 3 SL classes
+8B1: 8 congruence lifts; 4 with pg=2; 3 SL classes
+8C1: 8 congruence lifts; 2 with pg=2; 1 SL classes
+9A1: 2 congruence lifts; 1 with pg=2; 1 SL classes
+10A1: 2 congruence lifts; 2 with pg=2; 2 SL classes
+10D1: 2 congruence lifts; 1 with pg=2; 1 SL classes
+11A1: 2 congruence lifts; 1 with pg=2; 1 SL classes
+12A1: 4 congruence lifts; 2 with pg=2; 2 SL classes
+12B1: 16 congruence lifts; 12 with pg=2; 4 SL classes
+12F1: 8 congruence lifts; 2 with pg=2; 2 SL classes
+14C1: 4 congruence lifts; 1 with pg=2; 1 SL classes
+15C1: 4 congruence lifts; 2 with pg=2; 2 SL classes
+16A1: 8 congruence lifts; 4 with pg=2; 3 SL classes
+18C1: 2 congruence lifts; 1 with pg=2; 1 SL classes
+TOTAL SL conjugacy classes: 64; actual subgroups: 558
+GL(2,Z) conjugacy classes: 64
+PASS: exhaustive congruence lift enumeration and independent cusp/level checks

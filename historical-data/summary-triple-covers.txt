@@ -1,0 +1,147 @@
+In this file we describe experiments with triple covers.  To start, we consider an extremal 
+semistable rational elliptic surface: it has four singular fibres of type $I_{n_j}$ for
+$1 \le j \le 4$.  A triple cover totally ramified at two of these will have eight singular
+fibres: the ramified fibres will have subscripts multiplied by 3, the unramified ones will 
+appear 3 times, and so the subscripts will add to 36, giving a rank of 28 and a surface of
+maximal Picard number.  Indeed we always get such a surface by taking a triple cover ramified
+only at the singular fibres, although there are four triple covers with partial ramification
+at 4 given points and no reason for them automatically to be rational (they correspond to
+the subgroups of order 3 in the Jacobian of the genus-1 curve obtained as a double cover
+of P^1 branched at the ramification points).
+
+We can also obtain examples from elliptic surfaces with one starred fibre and two $I_n$
+fibres from the ramified triple cover.  Also, as in the case of double covers we can allow
+partial ramification at an II fibre.  However, total ramification at any additive fibre 
+prevents the surface from obtaining maximal rank from its reducible fibres.  But, as we shall 
+see, the situation is not hopeless.
+
+I realize that I was too pessimistic about positive rank.  To illustrate the situation,
+let us consider the surface from Herfurtner's tables with singular fibre types
+$I_1, I_7, II, II$.  This surface has rank 2; in Herfurtner's model the Mordell-Weil
+generators are defined over Q(sqrt 3), Q(sqrt -21), though one could twist to make either
+of them rational.  Consider a triple cover totally ramified at the two II fibres.  It has 
+three I_7 fibres and two I_0^*, which mean you start with Picard number 28, but the sections
+pull back to sections and so you get 2 more.  Indeed, this example appears to give the
+modular form 21.3.f.c (we had it already, but still).  Note that this idea doesn't apply to 
+double covers, or to twists of K3s, because the twist destroys the rank.
+
+For the purely ramified triple covers, note that the condition of the discriminant being a square
+is automatic when we have maximal rank.  In the semistable case, this is automatic, because 
+we replace two of the $I_n$ fibres by $I_{3n}$, multiplying the discriminant by $3$, and two
+by three of the same $I_n$, not affecting it mod squares.  The only other case is that in which
+an $II$ fibre ramifies.  In that case we change $II$ to $I_0^*$, which only changes the 
+discriminant by a factor of 4 (a square), but the rank is equal to the number of such fibres,
+and the triple cover multiplies all height pairings by $3$, so we multiply by $3$ for each such
+fibre anyway, just as if it were multiplicative.
+
+As with the double covers, we may give a table of triple covers.
+
+Table of triple covers with total ramification
+ i   n                                                                     base change  disc form(s)
+ 1   1                                              -1/3*s^3/(s^3 - 4*s^2 + 4*s - 4/3)  1 432.3.g.f
+ 1   2                    (-5/4*s^3 + 3*s^2 - 15/4*s + 1)/(s^3 - 15/4*s^2 + 3*s - 5/4)  1 972.3.d.c, 972.3.g.d
+ 1   3                                                 1/9*s^3 + 1/3*s^2 + 1/3*s - 8/9  1 432.3.g.f
+ 1   4                                                                         1/4*s^3  1 27.3.b.a, 108.3.c.a
+ 1   5                                                               s^3 - 3*s^2 + 3*s  1 432.3.g.f
+ 1   6                                        -9/5*s^3/(s^3 - 12/5*s^2 - 12/5*s - 4/5)  1 432.3.g.f
+ 2   1                                                (-3*s^2 - 3*s)/(s^3 + 3*s^2 - 1)  1 9.3.d.a
+ 2   2                                                               s^3 - 3*s^2 + 3*s  1 9.3.d.a
+ 3   1                                                 4/9*s^3 + 2/3*s^2 + 1/3*s - 4/9  1 243.3.b.d
+ 3   2                                               1/9*s^3 - 4/3*s^2 + 16/3*s - 28/9  1 486.3.b.a
+ 3   3                                               9/2*s^3/(s^3 + 3/2*s^2 - 6*s + 8)  1 same as 3.1
+ 3   4                                        -9/10*s^3/(s^3 - 6/5*s^2 - 3/5*s - 1/10)  1 same as 3.2
+ 3   5                                                                             s^3  1 18.3.b.a
+ 3   6                      (11/2*s^3 + 6*s^2 + 12*s - 10)/(s^3 + 6*s^2 - 15*s + 43/2)  1 same as 3.5
+ 4   1             (101/9*s^3 + 3*s^2 + 2/3*s - 13/9)/(s^3 + 2/3*s^2 - 13/3*s + 145/9)  1 27.3.b.b
+ 4   2                                                                             s^3  1 27.3.b.b
+ 5   2                                                                             s^3  1 486.3.b.d
+ 6   3                                 -169/68*s^3/(s^3 - 12/17*s^2 - 27/17*s - 81/68)  1 756.3.z.d
+ 6   4                               -289/234*s^3/(s^3 - 27/26*s^2 - 12/13*s - 32/117)  1 ?
+ 6   5                                                                             s^3  1 972.3.c.f
+ 7   2(-7649/760*s^3 + 15/4*s^2 - 27/38*s - 59/76)/(s^3 - 54/95*s^2 - 177/95*s - 4841/760)  1 ?
+ 7   3                                           64/49*s^3 - 24/49*s^2 + 3/49*s + 6/49  1 486.3.b.c
+ 7   6                                     -49/120*s^3/(s^3 - 8/5*s^2 + 1/5*s - 1/120)  1 ?
+ 8   1                                               1/4*s^3 - 9/4*s^2 + 27/4*s - 15/4  1 12.3.c.a
+ 8   4                                                   4*s^3/(s^3 + 3*s^2 - 9*s + 9)  1 2700.3.g.i
+ 8   6                  (76/9*s^3 + 5*s^2 + 30*s - 65/3)/(s^3 + 18*s^2 - 39*s + 376/9)  1 3600.3.e.y
+ 9   2                                                                             s^3  1 108.3.c.b
+10   1                                              -1/3*s^3/(s^3 - 4*s^2 + 4*s - 4/3)  1 972.3.c.e
+10   4                                                                         1/4*s^3  1 54.3.b.a
+10   6                                                      1/3*s^3/(s^2 - 4*s + 16/3)  1 ?
+11   2(-2393/285*s^3 + 5*s^2 - 25/19*s - 15/19)/(s^3 - 15/19*s^2 - 27/19*s - 1223/285)  1 ?
+11   3                                           25/16*s^3 - 15/16*s^2 + 3/16*s + 3/16  1 972.3.g.a
+11   6                                       -16/45*s^3/(s^3 - 5/3*s^2 + 1/3*s - 1/45)  1 540.3.g.c
+12   1                                              -1/3*s^3/(s^3 - 4*s^2 + 4*s - 4/3)  1 54.3.b.a
+12   2           (-19/30*s^3 + s^2 - 13/10*s + 2/5)/(s^3 - 39/10*s^2 + 18/5*s - 37/30)  1 ? (same as 10.6?)
+12   5                                                               s^3 - 3*s^2 + 3*s  1 972.3.c.e
+16   1(95/11*s^3 - 147*s^2 + 7056/11*s - 4165/11)/(s^3 - 144/11*s^2 + 255/11*s + 1247/11) 1 21.3.f.c
+17   2                    (-5/4*s^3 + 3*s^2 - 15/4*s + 1)/(s^3 - 15/4*s^2 + 3*s - 5/4)  1 ?
+18   1                            (-57/14*s^3 + 6*s^2 - 24/7*s)/(s^3 - 12/7*s^2 - 8/7)  1 ?
+19   1                                  625/46*s^3/(s^3 + 6/23*s^2 - 81/23*s + 729/46)  1 540.3.g.a
+20   5     (-811/30*s^3 + 81*s^2 - 837/10*s + 18/5)/(s^3 - 31/10*s^2 + 2/5*s - 733/30)  1 ?
+23   1                                                       (1/3*s^3 - s)/(s^2 - 1/3)  1 720.3.e.d
+24   2                    (-5/4*s^3 + 3*s^2 - 15/4*s + 1)/(s^3 - 15/4*s^2 + 3*s - 5/4)  1 (takes forever to compute coefficients?)
+25   2                                                                             s^3  1 1296.3.o.t
+
+Table of triple covers with mixed ramification (total at one point, partial at two)
+ i   n                                                                base change  disc form(s)
+ 1   1                                                             -2*s^3 - 3*s^2  6
+ 1   2                                                         -1/3*s^3/(s + 2/3)  6
+ 1   3                                                  (1/3*s^3 + s^2)/(s + 1/3)  3
+ 1   4                                                 (-1/3*s^3 + s^2)/(s - 1/3)  3
+ 1   5                                                             -2*s^3 + 3*s^2  6
+ 1   6                                                          1/3*s^3/(s - 2/3)  6
+ 1   7                               (-1/6*s^3 + 1/2*s^2 + 1/2*s + 1/2)/(s + 1/3)  6
+ 1   8                                                           -1/2*s^3 + 3/2*s  3
+ 1   9                                (1/6*s^3 + 1/2*s^2 - 1/2*s + 1/2)/(s - 1/3)  6
+ 1  10                                    (2/3*s^3 + 2*s^2)/(s^3 + s^2 + s - 1/3)  6
+ 1  11                                                        2/3*s^3/(s^2 - 1/3)  3
+ 1  12                                   (-2/3*s^3 + 2*s^2)/(s^3 - s^2 + s + 1/3)  6
+ 2   1                                                  2/3*s^3 + s^2 + 2*s + 1/3  3
+ 2   2                                        (2*s^3 + 3*s + 1)/(s^3 + 3*s^2 + 2)  3
+ 3   1                                    81/14*s^3/(s^3 + 24/7*s^2 - 6*s - 16/7)  6
+ 3   2                      (27/10*s^3 + 27/5*s^2)/(s^3 - 6/5*s^2 + 24/5*s + 4/5)  1 54.3.b.a
+ 3   3                 (135/34*s^3 + 54/17*s^2)/(s^3 + 12/17*s^2 + 6/17*s - 8/17)  2
+ 3   4                                                             -8*s^3 - 6*s^2  2
+ 3   5                                                         -2/3*s^3/(s + 1/3)  1 same as 3.2
+ 3   6                                                  (2/3*s^3 + s^2)/(s + 1/6)  6
+ 3   7                                                         -1/8*s^3 + 3/4*s^2  1 same as 3.2
+ 3   8                                                         1/12*s^3/(s - 8/3)  2
+ 3   9                                                (-1/12*s^3 + s^2)/(s - 4/3)  6
+ 3  10                                    -8/81*s^3 + 14/27*s^2 + 16/27*s - 28/81  6
+ 3  11                             (2/27*s^3 + 1/9*s^2 - 4/9*s + 34/27)/(s - 5/2)  2
+ 3  12                              (-2/27*s^3 + 8/9*s^2 + 4/9*s + 20/27)/(s - 1)  1 same as 3.2
+ 4   1                                   125/11*s^3/(s^3 + 6/11*s^2 - 3*s - 2/11)  3
+ 4   2                                 -2/125*s^3 + 33/125*s^2 + 6/125*s - 11/125  3
+ 5   1                                 -64/21*s^3/(s^3 - 81/7*s^2 + 27*s - 243/7)  3
+ 6   1                         -2401/4068*s^3/(s^3 + 432/113*s^2 + 6*s + 288/113)  6
+ 6   5                                                       -3/8*s^3/(s + 16/27) 42
+ 6   8                                                        -4/27*s^3/(s + 3/2) 21
+ 7   3                                                (-8/3*s^3 + s^2)/(s - 1/24) 15
+ 7   9                     (-8/243*s^3 + 1/81*s^2 + 10/81*s + 805/972)/(s + 53/8) 15
+ 7  12       (-3159/328*s^3 + 1215/328*s^2)/(s^3 + 15/41*s^2 + 150/41*s - 25/164)  3
+ 8   2            (1568/531*s^3 + 160/59*s^2)/(s^3 + 45/59*s^2 + 25/59*s - 25/59)  2
+ 8   6                                                   (-1/9*s^3 + s^2)/(s - 1)  5
+ 8  11                    (-3/32*s^3 + 27/32*s^2 + 15/32*s + 185/288)/(s - 17/27) 30
+ 9   1                              343/52*s^3/(s^3 + 192/13*s^2 + 24*s + 512/13)  3
+10   2                                                         1/12*s^3/(s - 8/3)  2
+10   6                                                          1/3*s^3/(s - 2/3)  1 288.3.o.a
+10  11                                     9/5*s^3/(s^3 - 24/5*s^2 + 12*s - 32/5)  6
+11   3                                                (-5/3*s^3 + s^2)/(s - 1/15)  5
+11   9               (-5/128*s^3 + 3/128*s^2 + 25/128*s + 1265/1152)/(s + 247/45) 15
+11  12   (-15232/1965*s^3 + 640/131*s^2)/(s^3 + 75/131*s^2 + 625/131*s - 125/393)  1 360.3.bj.a
+12   4                                                 (-1/3*s^3 + s^2)/(s - 1/3)  1 same as 10.6 
+12   7                              (-1/4*s^3 + 3/4*s^2 + 1/4*s + 5/36)/(s - 1/9)  6
+12  10                       (20/21*s^3 + 4/7*s^2)/(s^3 + 3/7*s^2 + 1/7*s - 1/21)  2
+
+
+
+
+Table of partially ramified triple covers
+i  n                   base change                    disc form(s)
+2  1            (1/9*s^3 + 12)/s^2                       1 18.3.b.a
+4  1 (1/9*s^3 - 2/9*s^2 - 77/27*s - 980/243)/            1 10.3.c.a
+             (s^2 - 94/3*s + 2209/9)
+
+(There aren't many examples because there is no obvious reason for the surface to be of 
+maximal rank unless we started with a semistable one and the covers are usually not rational.) 

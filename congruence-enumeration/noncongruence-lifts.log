@@ -1,0 +1,18 @@
+Loading "csg1-lev48.dat"
+Loading "csg1-lev40.dat"
+Loading "csg1-lev32.dat"
+Loading "csg1-lev24.dat"
+Loading "csg1-lev16.dat"
+Loading "csg1-lev8.dat"
+Loading "csg1-lev0.dat"
+Loading "csg0-lev48.dat"
+Loading "csg0-lev32.dat"
+Loading "csg0-lev24.dat"
+Loading "csg0-lev16.dat"
+Loading "csg0-lev8.dat"
+Loading "csg0-lev0.dat"
+Above projective Gamma(4): 15 lifts with pg=2
+All actual pg=2 subgroups with congruence projective image: 1745
+Congruence actual subgroups (separate complete enumeration): 558
+Noncongruence actual subgroups with congruence projective image: 1187
+PASS: all-lift count from the orbifold presentation

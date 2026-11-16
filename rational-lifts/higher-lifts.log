@@ -1,0 +1,8 @@
+Loading "../congruence-enumeration/representatives.m"
+2|4D0|16|8|proof|32|8|0
+2|4D0|32|8|proof|64|16|0
+6|5F0|10|5|proof|16|4|0
+6|5F0|20|5|proof|32|8|0
+7|6A0|24|12|proof|48|8|0
+7|6A0|48|12|proof|96|16|0
+PASS: exceptional classes checked at doubled and quadrupled levels

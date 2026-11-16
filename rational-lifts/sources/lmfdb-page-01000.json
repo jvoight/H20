@@ -1,0 +1,3839 @@
+{
+  "table": "gps_gl2zhat_fine",
+  "timestamp": "2026-11-15T22:42:55.109403",
+  "data": [
+    {
+      "id": 7628,
+      "label": "16.48.0-8.i.1.4",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          12,
+          0,
+          13
+        ],
+        [
+          7,
+          6,
+          8,
+          15
+        ],
+        [
+          7,
+          10,
+          0,
+          9
+        ],
+        [
+          11,
+          0,
+          0,
+          7
+        ],
+        [
+          13,
+          8,
+          0,
+          13
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.i.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7631,
+      "label": "16.48.0-8.i.1.5",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          4,
+          8,
+          1
+        ],
+        [
+          3,
+          8,
+          0,
+          15
+        ],
+        [
+          7,
+          14,
+          8,
+          11
+        ],
+        [
+          11,
+          12,
+          8,
+          11
+        ],
+        [
+          13,
+          12,
+          0,
+          7
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.i.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 4965,
+      "label": "16.48.0-8.i.1.6",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          12,
+          0,
+          7
+        ],
+        [
+          7,
+          10,
+          0,
+          15
+        ],
+        [
+          9,
+          10,
+          8,
+          5
+        ],
+        [
+          11,
+          4,
+          8,
+          13
+        ],
+        [
+          15,
+          2,
+          0,
+          11
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.i.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.3",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7629,
+      "label": "16.48.0-8.i.1.7",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          4,
+          0,
+          11
+        ],
+        [
+          1,
+          4,
+          0,
+          15
+        ],
+        [
+          3,
+          4,
+          8,
+          13
+        ],
+        [
+          7,
+          2,
+          0,
+          1
+        ],
+        [
+          13,
+          4,
+          0,
+          9
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.i.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7627,
+      "label": "16.48.0-8.i.1.8",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          6,
+          0,
+          11
+        ],
+        [
+          5,
+          6,
+          0,
+          13
+        ],
+        [
+          5,
+          14,
+          8,
+          1
+        ],
+        [
+          7,
+          12,
+          0,
+          5
+        ],
+        [
+          9,
+          4,
+          0,
+          7
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.i.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.3",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7583,
+      "label": "16.48.0-16.i.1.1",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          9,
+          6,
+          0,
+          3
+        ],
+        [
+          11,
+          9,
+          12,
+          15
+        ],
+        [
+          13,
+          8,
+          8,
+          9
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.0.i.1",
+      "CPlabel": "16C0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-16.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7579,
+      "label": "16.48.0-16.i.1.2",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          5,
+          13,
+          12,
+          9
+        ],
+        [
+          7,
+          13,
+          4,
+          7
+        ],
+        [
+          11,
+          1,
+          12,
+          5
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.0.i.1",
+      "CPlabel": "16C0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-16.b.1.3",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7584,
+      "label": "16.48.0-16.i.1.3",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          5,
+          15,
+          12,
+          15
+        ],
+        [
+          7,
+          15,
+          4,
+          11
+        ],
+        [
+          13,
+          10,
+          0,
+          9
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.0.i.1",
+      "CPlabel": "16C0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-16.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7580,
+      "label": "16.48.0-16.i.1.4",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          5,
+          11,
+          4,
+          1
+        ],
+        [
+          7,
+          9,
+          4,
+          15
+        ],
+        [
+          9,
+          10,
+          0,
+          3
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.0.i.1",
+      "CPlabel": "16C0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-16.b.1.3",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7582,
+      "label": "16.48.0-16.i.1.5",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          9,
+          12,
+          13
+        ],
+        [
+          7,
+          6,
+          0,
+          11
+        ],
+        [
+          15,
+          2,
+          8,
+          9
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.0.i.1",
+      "CPlabel": "16C0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-16.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7313,
+      "label": "16.48.0-16.i.1.6",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          1,
+          12,
+          13
+        ],
+        [
+          9,
+          6,
+          0,
+          13
+        ],
+        [
+          15,
+          3,
+          4,
+          1
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.0.i.1",
+      "CPlabel": "16C0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-16.b.1.3",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7581,
+      "label": "16.48.0-16.i.1.7",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          9,
+          1,
+          12,
+          7
+        ],
+        [
+          15,
+          4,
+          8,
+          3
+        ],
+        [
+          15,
+          10,
+          0,
+          13
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.0.i.1",
+      "CPlabel": "16C0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-16.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 6275,
+      "label": "16.48.0-16.i.1.8",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          5,
+          8,
+          8,
+          1
+        ],
+        [
+          13,
+          0,
+          0,
+          3
+        ],
+        [
+          13,
+          11,
+          12,
+          7
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.0.i.1",
+      "CPlabel": "16C0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-16.b.1.3",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 4981,
+      "label": "16.48.0-8.j.1.1",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          0,
+          0,
+          3
+        ],
+        [
+          3,
+          3,
+          12,
+          9
+        ],
+        [
+          9,
+          3,
+          12,
+          1
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.j.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 4987,
+      "label": "16.48.0-8.j.1.2",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          9,
+          4,
+          11
+        ],
+        [
+          7,
+          8,
+          8,
+          15
+        ],
+        [
+          9,
+          13,
+          4,
+          3
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.j.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7587,
+      "label": "16.48.0-16.j.1.1",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          11,
+          4,
+          15
+        ],
+        [
+          5,
+          8,
+          0,
+          1
+        ],
+        [
+          11,
+          1,
+          12,
+          5
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.0.j.1",
+      "CPlabel": "16C0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-16.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 4772,
+      "label": "16.48.0-16.j.1.2",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          13,
+          12,
+          13
+        ],
+        [
+          5,
+          0,
+          8,
+          11
+        ],
+        [
+          13,
+          7,
+          4,
+          15
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.0.j.1",
+      "CPlabel": "16C0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-16.b.1.3",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7588,
+      "label": "16.48.0-16.j.1.3",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          5,
+          3,
+          4,
+          3
+        ],
+        [
+          7,
+          6,
+          0,
+          9
+        ],
+        [
+          11,
+          13,
+          12,
+          7
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.0.j.1",
+      "CPlabel": "16C0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-16.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 4789,
+      "label": "16.48.0-16.j.1.4",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          10,
+          0,
+          3
+        ],
+        [
+          9,
+          15,
+          4,
+          15
+        ],
+        [
+          11,
+          11,
+          4,
+          1
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.0.j.1",
+      "CPlabel": "16C0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-16.b.1.3",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7590,
+      "label": "16.48.0-16.j.1.5",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          14,
+          0,
+          5
+        ],
+        [
+          11,
+          15,
+          4,
+          7
+        ],
+        [
+          13,
+          15,
+          4,
+          13
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.0.j.1",
+      "CPlabel": "16C0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-16.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7586,
+      "label": "16.48.0-16.j.1.6",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          1,
+          12,
+          13
+        ],
+        [
+          7,
+          5,
+          12,
+          1
+        ],
+        [
+          7,
+          8,
+          8,
+          9
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.0.j.1",
+      "CPlabel": "16C0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-16.b.1.3",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7589,
+      "label": "16.48.0-16.j.1.7",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          11,
+          4,
+          7
+        ],
+        [
+          11,
+          6,
+          0,
+          1
+        ],
+        [
+          15,
+          12,
+          0,
+          11
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.0.j.1",
+      "CPlabel": "16C0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-16.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7585,
+      "label": "16.48.0-16.j.1.8",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          1,
+          12,
+          1
+        ],
+        [
+          5,
+          13,
+          12,
+          11
+        ],
+        [
+          9,
+          2,
+          0,
+          3
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.0.j.1",
+      "CPlabel": "16C0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-16.b.1.3",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7635,
+      "label": "16.48.0-8.k.1.1",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          2,
+          8,
+          1
+        ],
+        [
+          3,
+          9,
+          8,
+          15
+        ],
+        [
+          5,
+          8,
+          0,
+          15
+        ],
+        [
+          13,
+          5,
+          8,
+          11
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.k.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7634,
+      "label": "16.48.0-8.k.1.2",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          8,
+          0,
+          11
+        ],
+        [
+          9,
+          7,
+          8,
+          13
+        ],
+        [
+          13,
+          4,
+          0,
+          5
+        ],
+        [
+          15,
+          0,
+          8,
+          15
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.k.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7637,
+      "label": "16.48.0-8.k.1.3",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          8,
+          8,
+          1
+        ],
+        [
+          7,
+          14,
+          8,
+          15
+        ],
+        [
+          11,
+          15,
+          8,
+          13
+        ],
+        [
+          11,
+          15,
+          8,
+          15
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.k.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7636,
+      "label": "16.48.0-8.k.1.4",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          5,
+          0,
+          15
+        ],
+        [
+          5,
+          11,
+          8,
+          1
+        ],
+        [
+          9,
+          8,
+          8,
+          11
+        ],
+        [
+          13,
+          8,
+          0,
+          7
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.k.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 5205,
+      "label": "16.48.0-8.q.1.1",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          7,
+          0,
+          15
+        ],
+        [
+          3,
+          14,
+          0,
+          11
+        ],
+        [
+          5,
+          15,
+          8,
+          15
+        ],
+        [
+          7,
+          0,
+          8,
+          11
+        ],
+        [
+          15,
+          12,
+          8,
+          7
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.q.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 5200,
+      "label": "16.48.0-8.q.1.2",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          5,
+          10,
+          8,
+          13
+        ],
+        [
+          7,
+          4,
+          0,
+          11
+        ],
+        [
+          9,
+          5,
+          0,
+          3
+        ],
+        [
+          11,
+          0,
+          0,
+          15
+        ],
+        [
+          15,
+          0,
+          8,
+          7
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.q.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 5049,
+      "label": "16.48.0-8.q.1.3",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          7,
+          0,
+          7
+        ],
+        [
+          5,
+          0,
+          0,
+          13
+        ],
+        [
+          9,
+          13,
+          8,
+          3
+        ],
+        [
+          11,
+          6,
+          8,
+          3
+        ],
+        [
+          11,
+          10,
+          0,
+          15
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.q.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7639,
+      "label": "16.48.0-8.q.1.4",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          7,
+          0,
+          8,
+          7
+        ],
+        [
+          9,
+          3,
+          0,
+          15
+        ],
+        [
+          9,
+          13,
+          8,
+          3
+        ],
+        [
+          11,
+          9,
+          0,
+          1
+        ],
+        [
+          15,
+          9,
+          8,
+          13
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.q.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.3",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7638,
+      "label": "16.48.0-8.q.1.5",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          7,
+          1,
+          0,
+          5
+        ],
+        [
+          9,
+          7,
+          8,
+          3
+        ],
+        [
+          11,
+          5,
+          0,
+          13
+        ],
+        [
+          11,
+          13,
+          8,
+          1
+        ],
+        [
+          11,
+          14,
+          0,
+          3
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.q.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7643,
+      "label": "16.48.0-8.r.1.1",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          11,
+          0,
+          7
+        ],
+        [
+          5,
+          4,
+          8,
+          13
+        ],
+        [
+          13,
+          9,
+          8,
+          1
+        ],
+        [
+          15,
+          15,
+          8,
+          5
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.r.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7641,
+      "label": "16.48.0-8.r.1.2",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          9,
+          11,
+          0,
+          3
+        ],
+        [
+          9,
+          15,
+          8,
+          13
+        ],
+        [
+          11,
+          15,
+          0,
+          15
+        ],
+        [
+          13,
+          1,
+          8,
+          9
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.r.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7642,
+      "label": "16.48.0-8.r.1.3",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          7,
+          0,
+          8,
+          9
+        ],
+        [
+          7,
+          13,
+          8,
+          5
+        ],
+        [
+          13,
+          11,
+          0,
+          9
+        ],
+        [
+          13,
+          15,
+          0,
+          7
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.r.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7640,
+      "label": "16.48.0-8.r.1.4",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          14,
+          8,
+          15
+        ],
+        [
+          3,
+          3,
+          8,
+          1
+        ],
+        [
+          9,
+          15,
+          0,
+          5
+        ],
+        [
+          13,
+          12,
+          0,
+          11
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.r.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 5220,
+      "label": "16.48.0-8.s.1.1",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          7,
+          0,
+          14,
+          9
+        ],
+        [
+          7,
+          14,
+          14,
+          13
+        ],
+        [
+          15,
+          15,
+          8,
+          13
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.s.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7645,
+      "label": "16.48.0-8.s.1.2",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          1,
+          0,
+          11
+        ],
+        [
+          7,
+          6,
+          0,
+          15
+        ],
+        [
+          7,
+          7,
+          14,
+          1
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.s.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.3",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7644,
+      "label": "16.48.0-8.s.1.3",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          0,
+          14,
+          13
+        ],
+        [
+          5,
+          15,
+          2,
+          7
+        ],
+        [
+          7,
+          11,
+          6,
+          9
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.s.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 5210,
+      "label": "16.48.0-8.s.1.4",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          7,
+          6,
+          5
+        ],
+        [
+          11,
+          2,
+          8,
+          11
+        ],
+        [
+          13,
+          9,
+          0,
+          15
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.s.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.3",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 5250,
+      "label": "16.48.0-8.t.1.1",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          2,
+          0,
+          13
+        ],
+        [
+          3,
+          5,
+          12,
+          13
+        ],
+        [
+          5,
+          11,
+          8,
+          15
+        ],
+        [
+          9,
+          4,
+          4,
+          1
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.t.1",
+      "CPlabel": "4G0",
+      "sl2level": 8,
+      "sl2label": "8.48.0-4.a.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 5245,
+      "label": "16.48.0-8.t.1.2",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          5,
+          5,
+          4,
+          15
+        ],
+        [
+          5,
+          12,
+          12,
+          13
+        ],
+        [
+          7,
+          7,
+          0,
+          1
+        ],
+        [
+          7,
+          9,
+          0,
+          5
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.t.1",
+      "CPlabel": "4G0",
+      "sl2level": 8,
+      "sl2label": "8.48.0-4.a.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 5230,
+      "label": "16.48.0-8.t.1.3",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          5,
+          1,
+          0,
+          11
+        ],
+        [
+          5,
+          6,
+          4,
+          9
+        ],
+        [
+          7,
+          13,
+          8,
+          5
+        ],
+        [
+          13,
+          15,
+          0,
+          7
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.t.1",
+      "CPlabel": "4G0",
+      "sl2level": 8,
+      "sl2label": "8.48.0-4.a.1.3",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 5225,
+      "label": "16.48.0-8.t.1.4",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          14,
+          0,
+          7
+        ],
+        [
+          5,
+          14,
+          12,
+          1
+        ],
+        [
+          7,
+          0,
+          0,
+          15
+        ],
+        [
+          7,
+          3,
+          0,
+          9
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.t.1",
+      "CPlabel": "4G0",
+      "sl2level": 8,
+      "sl2label": "8.48.0-4.a.1.3",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 5488,
+      "label": "16.48.0-8.w.1.1",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          14,
+          8,
+          15
+        ],
+        [
+          5,
+          5,
+          12,
+          15
+        ],
+        [
+          11,
+          7,
+          12,
+          9
+        ],
+        [
+          11,
+          8,
+          8,
+          7
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.w.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 5332,
+      "label": "16.48.0-8.w.1.2",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          2,
+          0,
+          7
+        ],
+        [
+          5,
+          10,
+          8,
+          9
+        ],
+        [
+          11,
+          0,
+          0,
+          15
+        ],
+        [
+          15,
+          7,
+          4,
+          13
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.w.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 5756,
+      "label": "16.48.0-8.x.1.1",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          6,
+          0,
+          11
+        ],
+        [
+          7,
+          1,
+          12,
+          9
+        ],
+        [
+          11,
+          12,
+          12,
+          7
+        ],
+        [
+          11,
+          13,
+          0,
+          5
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.x.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 5750,
+      "label": "16.48.0-8.x.1.2",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          5,
+          4,
+          5
+        ],
+        [
+          5,
+          14,
+          0,
+          13
+        ],
+        [
+          7,
+          10,
+          0,
+          7
+        ],
+        [
+          13,
+          11,
+          0,
+          11
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.x.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.3",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 5858,
+      "label": "16.48.0-8.y.1.1",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          5,
+          8,
+          5
+        ],
+        [
+          7,
+          7,
+          4,
+          9
+        ],
+        [
+          7,
+          13,
+          12,
+          1
+        ],
+        [
+          9,
+          12,
+          12,
+          15
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.y.1",
+      "CPlabel": "8G0",
+      "sl2level": 8,
+      "sl2label": "8.48.0-8.b.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 5915,
+      "label": "16.48.0-8.y.1.2",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          0,
+          12,
+          15
+        ],
+        [
+          3,
+          12,
+          0,
+          11
+        ],
+        [
+          11,
+          7,
+          0,
+          15
+        ],
+        [
+          13,
+          11,
+          4,
+          3
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.y.1",
+      "CPlabel": "8G0",
+      "sl2level": 8,
+      "sl2label": "8.48.0-8.b.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 5779,
+      "label": "16.48.0-8.y.1.3",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          5,
+          4,
+          4,
+          3
+        ],
+        [
+          7,
+          0,
+          4,
+          1
+        ],
+        [
+          7,
+          14,
+          12,
+          9
+        ],
+        [
+          13,
+          1,
+          12,
+          11
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.y.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.3",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 5762,
+      "label": "16.48.0-8.y.1.4",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          5,
+          14,
+          4,
+          11
+        ],
+        [
+          7,
+          0,
+          4,
+          9
+        ],
+        [
+          7,
+          9,
+          12,
+          9
+        ],
+        [
+          9,
+          1,
+          8,
+          13
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.y.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 5773,
+      "label": "16.48.0-8.y.1.5",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          7,
+          9,
+          4,
+          1
+        ],
+        [
+          13,
+          5,
+          8,
+          1
+        ],
+        [
+          13,
+          14,
+          4,
+          3
+        ],
+        [
+          15,
+          8,
+          8,
+          15
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.y.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.3",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 5931,
+      "label": "16.48.0-8.y.1.6",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          9,
+          6,
+          12,
+          7
+        ],
+        [
+          9,
+          13,
+          0,
+          13
+        ],
+        [
+          11,
+          14,
+          8,
+          11
+        ],
+        [
+          13,
+          7,
+          0,
+          1
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.y.1",
+      "CPlabel": "8G0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.b.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7591,
+      "label": "16.48.0-8.ba.1.1",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          7,
+          8,
+          3
+        ],
+        [
+          3,
+          5,
+          0,
+          3
+        ],
+        [
+          3,
+          13,
+          0,
+          15
+        ],
+        [
+          7,
+          15,
+          0,
+          13
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.ba.1",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7593,
+      "label": "16.48.0-8.ba.1.2",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          9,
+          0,
+          11
+        ],
+        [
+          5,
+          14,
+          8,
+          11
+        ],
+        [
+          9,
+          6,
+          0,
+          5
+        ],
+        [
+          15,
+          12,
+          8,
+          15
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.ba.1",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7595,
+      "label": "16.48.0-8.ba.1.3",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          6,
+          8,
+          13
+        ],
+        [
+          5,
+          15,
+          0,
+          5
+        ],
+        [
+          7,
+          5,
+          0,
+          5
+        ],
+        [
+          13,
+          2,
+          8,
+          7
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.ba.1",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7597,
+      "label": "16.48.0-8.ba.1.4",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          5,
+          8,
+          8,
+          3
+        ],
+        [
+          9,
+          15,
+          8,
+          7
+        ],
+        [
+          11,
+          9,
+          0,
+          7
+        ],
+        [
+          13,
+          12,
+          0,
+          7
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.ba.1",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7592,
+      "label": "16.48.0-8.ba.1.5",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          9,
+          0,
+          11
+        ],
+        [
+          7,
+          9,
+          0,
+          13
+        ],
+        [
+          9,
+          5,
+          8,
+          3
+        ],
+        [
+          11,
+          7,
+          8,
+          7
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.ba.1",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7594,
+      "label": "16.48.0-8.ba.1.6",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          3,
+          0,
+          3
+        ],
+        [
+          3,
+          13,
+          8,
+          7
+        ],
+        [
+          11,
+          0,
+          0,
+          1
+        ],
+        [
+          15,
+          7,
+          0,
+          9
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.ba.1",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7596,
+      "label": "16.48.0-8.ba.1.7",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          7,
+          5,
+          0,
+          9
+        ],
+        [
+          9,
+          3,
+          8,
+          7
+        ],
+        [
+          11,
+          4,
+          0,
+          9
+        ],
+        [
+          13,
+          6,
+          8,
+          11
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.ba.1",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7598,
+      "label": "16.48.0-8.ba.1.8",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          5,
+          14,
+          0,
+          15
+        ],
+        [
+          9,
+          7,
+          0,
+          11
+        ],
+        [
+          13,
+          2,
+          0,
+          11
+        ],
+        [
+          15,
+          10,
+          8,
+          7
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.ba.1",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7599,
+      "label": "16.48.0-8.ba.2.1",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          13,
+          8,
+          1
+        ],
+        [
+          7,
+          13,
+          0,
+          11
+        ],
+        [
+          15,
+          0,
+          0,
+          5
+        ],
+        [
+          15,
+          13,
+          8,
+          9
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.ba.2",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7600,
+      "label": "16.48.0-8.ba.2.2",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          1,
+          0,
+          5
+        ],
+        [
+          9,
+          3,
+          8,
+          15
+        ],
+        [
+          11,
+          12,
+          0,
+          15
+        ],
+        [
+          13,
+          13,
+          8,
+          5
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.ba.2",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7603,
+      "label": "16.48.0-8.ba.2.3",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          14,
+          0,
+          13
+        ],
+        [
+          9,
+          0,
+          0,
+          11
+        ],
+        [
+          9,
+          9,
+          8,
+          7
+        ],
+        [
+          15,
+          13,
+          0,
+          11
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.ba.2",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7604,
+      "label": "16.48.0-8.ba.2.4",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          9,
+          4,
+          0,
+          11
+        ],
+        [
+          13,
+          4,
+          0,
+          1
+        ],
+        [
+          13,
+          13,
+          0,
+          15
+        ],
+        [
+          15,
+          10,
+          8,
+          5
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.ba.2",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7601,
+      "label": "16.48.0-8.ba.2.5",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          7,
+          0,
+          3
+        ],
+        [
+          5,
+          6,
+          0,
+          9
+        ],
+        [
+          9,
+          2,
+          0,
+          11
+        ],
+        [
+          11,
+          10,
+          8,
+          13
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.ba.2",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7602,
+      "label": "16.48.0-8.ba.2.6",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          7,
+          8,
+          8,
+          15
+        ],
+        [
+          9,
+          15,
+          0,
+          15
+        ],
+        [
+          11,
+          15,
+          0,
+          11
+        ],
+        [
+          13,
+          2,
+          8,
+          1
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.ba.2",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7605,
+      "label": "16.48.0-8.ba.2.7",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          5,
+          0,
+          7
+        ],
+        [
+          3,
+          2,
+          8,
+          13
+        ],
+        [
+          7,
+          14,
+          8,
+          7
+        ],
+        [
+          15,
+          5,
+          0,
+          11
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.ba.2",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7606,
+      "label": "16.48.0-8.ba.2.8",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          1,
+          8,
+          15
+        ],
+        [
+          1,
+          5,
+          0,
+          13
+        ],
+        [
+          7,
+          7,
+          8,
+          11
+        ],
+        [
+          13,
+          13,
+          0,
+          13
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.ba.2",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7607,
+      "label": "16.48.0-8.bb.1.1",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          12,
+          8,
+          11
+        ],
+        [
+          7,
+          4,
+          8,
+          15
+        ],
+        [
+          13,
+          7,
+          8,
+          9
+        ],
+        [
+          13,
+          13,
+          8,
+          13
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.bb.1",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7611,
+      "label": "16.48.0-8.bb.1.2",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          11,
+          1,
+          0,
+          5
+        ],
+        [
+          11,
+          5,
+          8,
+          11
+        ],
+        [
+          13,
+          7,
+          8,
+          1
+        ],
+        [
+          13,
+          11,
+          8,
+          11
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.bb.1",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7609,
+      "label": "16.48.0-8.bb.1.3",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          9,
+          6,
+          0,
+          15
+        ],
+        [
+          11,
+          3,
+          0,
+          11
+        ],
+        [
+          13,
+          11,
+          8,
+          1
+        ],
+        [
+          15,
+          12,
+          8,
+          15
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.bb.1",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7613,
+      "label": "16.48.0-8.bb.1.4",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          2,
+          8,
+          5
+        ],
+        [
+          3,
+          1,
+          8,
+          11
+        ],
+        [
+          9,
+          14,
+          0,
+          15
+        ],
+        [
+          15,
+          6,
+          0,
+          5
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.bb.1",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7608,
+      "label": "16.48.0-8.bb.1.5",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          3,
+          8,
+          7
+        ],
+        [
+          3,
+          11,
+          0,
+          13
+        ],
+        [
+          5,
+          9,
+          0,
+          9
+        ],
+        [
+          11,
+          13,
+          8,
+          9
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.bb.1",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7612,
+      "label": "16.48.0-8.bb.1.6",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          10,
+          0,
+          11
+        ],
+        [
+          3,
+          13,
+          8,
+          13
+        ],
+        [
+          5,
+          15,
+          0,
+          3
+        ],
+        [
+          9,
+          0,
+          0,
+          5
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.bb.1",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7610,
+      "label": "16.48.0-8.bb.1.7",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          5,
+          3,
+          0,
+          9
+        ],
+        [
+          7,
+          14,
+          0,
+          3
+        ],
+        [
+          9,
+          0,
+          8,
+          13
+        ],
+        [
+          11,
+          9,
+          8,
+          13
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.bb.1",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7614,
+      "label": "16.48.0-8.bb.1.8",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          1,
+          0,
+          5
+        ],
+        [
+          9,
+          14,
+          0,
+          13
+        ],
+        [
+          11,
+          7,
+          8,
+          11
+        ],
+        [
+          15,
+          12,
+          8,
+          15
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.bb.1",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7615,
+      "label": "16.48.0-8.bb.2.1",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          10,
+          0,
+          9
+        ],
+        [
+          7,
+          6,
+          0,
+          9
+        ],
+        [
+          9,
+          13,
+          8,
+          9
+        ],
+        [
+          11,
+          11,
+          0,
+          7
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.bb.2",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7617,
+      "label": "16.48.0-8.bb.2.2",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          12,
+          0,
+          7
+        ],
+        [
+          1,
+          13,
+          8,
+          7
+        ],
+        [
+          3,
+          10,
+          8,
+          15
+        ],
+        [
+          5,
+          9,
+          8,
+          7
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.bb.2",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7616,
+      "label": "16.48.0-8.bb.2.3",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          12,
+          0,
+          1
+        ],
+        [
+          11,
+          9,
+          8,
+          15
+        ],
+        [
+          13,
+          11,
+          0,
+          1
+        ],
+        [
+          15,
+          10,
+          8,
+          1
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.bb.2",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7618,
+      "label": "16.48.0-8.bb.2.4",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          3,
+          3,
+          0,
+          9
+        ],
+        [
+          5,
+          5,
+          8,
+          15
+        ],
+        [
+          7,
+          3,
+          0,
+          15
+        ],
+        [
+          9,
+          5,
+          0,
+          7
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.bb.2",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7619,
+      "label": "16.48.0-8.bb.2.5",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          1,
+          8,
+          15
+        ],
+        [
+          3,
+          4,
+          0,
+          15
+        ],
+        [
+          11,
+          12,
+          8,
+          9
+        ],
+        [
+          13,
+          1,
+          8,
+          9
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.bb.2",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7621,
+      "label": "16.48.0-8.bb.2.6",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          2,
+          0,
+          7
+        ],
+        [
+          1,
+          13,
+          0,
+          7
+        ],
+        [
+          11,
+          9,
+          0,
+          1
+        ],
+        [
+          15,
+          15,
+          8,
+          15
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.bb.2",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7620,
+      "label": "16.48.0-8.bb.2.7",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          1,
+          11,
+          0,
+          9
+        ],
+        [
+          7,
+          14,
+          8,
+          15
+        ],
+        [
+          9,
+          14,
+          0,
+          15
+        ],
+        [
+          11,
+          0,
+          8,
+          7
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.bb.2",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7622,
+      "label": "16.48.0-8.bb.2.8",
+      "level": 16,
+      "index": 48,
+      "genus": 0,
+      "generators": [
+        [
+          11,
+          12,
+          8,
+          15
+        ],
+        [
+          13,
+          1,
+          0,
+          1
+        ],
+        [
+          13,
+          10,
+          8,
+          15
+        ],
+        [
+          15,
+          12,
+          8,
+          7
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "8.24.0.bb.2",
+      "CPlabel": "8I0",
+      "sl2level": 16,
+      "sl2label": "16.48.0-8.c.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7648,
+      "label": "16.48.1-16.a.1.1",
+      "level": 16,
+      "index": 48,
+      "genus": 1,
+      "generators": [
+        [
+          3,
+          11,
+          0,
+          15
+        ],
+        [
+          9,
+          8,
+          8,
+          5
+        ],
+        [
+          9,
+          13,
+          0,
+          13
+        ],
+        [
+          11,
+          10,
+          0,
+          13
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.1.a.1",
+      "CPlabel": "16A1",
+      "sl2level": 16,
+      "sl2label": "16.48.1-16.a.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7650,
+      "label": "16.48.1-16.a.1.2",
+      "level": 16,
+      "index": 48,
+      "genus": 1,
+      "generators": [
+        [
+          1,
+          14,
+          0,
+          15
+        ],
+        [
+          5,
+          12,
+          0,
+          5
+        ],
+        [
+          5,
+          14,
+          8,
+          1
+        ],
+        [
+          7,
+          15,
+          0,
+          3
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.1.a.1",
+      "CPlabel": "16A1",
+      "sl2level": 16,
+      "sl2label": "16.48.1-16.a.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7646,
+      "label": "16.48.1-16.a.1.3",
+      "level": 16,
+      "index": 48,
+      "genus": 1,
+      "generators": [
+        [
+          3,
+          3,
+          0,
+          1
+        ],
+        [
+          3,
+          6,
+          8,
+          15
+        ],
+        [
+          5,
+          12,
+          0,
+          5
+        ],
+        [
+          15,
+          9,
+          0,
+          11
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.1.a.1",
+      "CPlabel": "16A1",
+      "sl2level": 16,
+      "sl2label": "16.48.1-16.a.1.3",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7661,
+      "label": "16.48.1-16.a.1.4",
+      "level": 16,
+      "index": 48,
+      "genus": 1,
+      "generators": [
+        [
+          1,
+          8,
+          0,
+          7
+        ],
+        [
+          3,
+          11,
+          0,
+          7
+        ],
+        [
+          13,
+          6,
+          8,
+          7
+        ],
+        [
+          13,
+          13,
+          8,
+          5
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.1.a.1",
+      "CPlabel": "16A1",
+      "sl2level": 16,
+      "sl2label": "16.48.1-16.a.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7658,
+      "label": "16.48.1-16.a.1.5",
+      "level": 16,
+      "index": 48,
+      "genus": 1,
+      "generators": [
+        [
+          1,
+          1,
+          0,
+          5
+        ],
+        [
+          5,
+          3,
+          0,
+          7
+        ],
+        [
+          11,
+          3,
+          8,
+          3
+        ],
+        [
+          11,
+          13,
+          0,
+          7
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.1.a.1",
+      "CPlabel": "16A1",
+      "sl2level": 16,
+      "sl2label": "16.48.1-16.a.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7651,
+      "label": "16.48.1-16.a.1.6",
+      "level": 16,
+      "index": 48,
+      "genus": 1,
+      "generators": [
+        [
+          1,
+          0,
+          8,
+          5
+        ],
+        [
+          1,
+          3,
+          8,
+          7
+        ],
+        [
+          11,
+          8,
+          8,
+          1
+        ],
+        [
+          13,
+          11,
+          0,
+          15
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.1.a.1",
+      "CPlabel": "16A1",
+      "sl2level": 16,
+      "sl2label": "16.48.1-16.a.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7654,
+      "label": "16.48.1-16.a.1.7",
+      "level": 16,
+      "index": 48,
+      "genus": 1,
+      "generators": [
+        [
+          3,
+          4,
+          8,
+          7
+        ],
+        [
+          5,
+          6,
+          0,
+          5
+        ],
+        [
+          7,
+          12,
+          0,
+          9
+        ],
+        [
+          11,
+          15,
+          8,
+          5
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.1.a.1",
+      "CPlabel": "16A1",
+      "sl2level": 16,
+      "sl2label": "16.48.1-16.a.1.3",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7660,
+      "label": "16.48.1-16.a.1.8",
+      "level": 16,
+      "index": 48,
+      "genus": 1,
+      "generators": [
+        [
+          1,
+          9,
+          0,
+          5
+        ],
+        [
+          7,
+          12,
+          0,
+          1
+        ],
+        [
+          9,
+          12,
+          8,
+          11
+        ],
+        [
+          13,
+          15,
+          0,
+          15
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.1.a.1",
+      "CPlabel": "16A1",
+      "sl2level": 16,
+      "sl2label": "16.48.1-16.a.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7649,
+      "label": "16.48.1-16.a.1.9",
+      "level": 16,
+      "index": 48,
+      "genus": 1,
+      "generators": [
+        [
+          7,
+          14,
+          8,
+          3
+        ],
+        [
+          9,
+          5,
+          8,
+          9
+        ],
+        [
+          11,
+          10,
+          8,
+          9
+        ],
+        [
+          13,
+          9,
+          0,
+          9
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.1.a.1",
+      "CPlabel": "16A1",
+      "sl2level": 16,
+      "sl2label": "16.48.1-16.a.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7653,
+      "label": "16.48.1-16.a.1.10",
+      "level": 16,
+      "index": 48,
+      "genus": 1,
+      "generators": [
+        [
+          5,
+          8,
+          0,
+          5
+        ],
+        [
+          5,
+          9,
+          8,
+          3
+        ],
+        [
+          7,
+          0,
+          8,
+          11
+        ],
+        [
+          7,
+          9,
+          8,
+          7
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.1.a.1",
+      "CPlabel": "16A1",
+      "sl2level": 16,
+      "sl2label": "16.48.1-16.a.1.2",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7656,
+      "label": "16.48.1-16.a.1.11",
+      "level": 16,
+      "index": 48,
+      "genus": 1,
+      "generators": [
+        [
+          5,
+          8,
+          0,
+          13
+        ],
+        [
+          7,
+          3,
+          8,
+          9
+        ],
+        [
+          7,
+          8,
+          8,
+          5
+        ],
+        [
+          11,
+          1,
+          0,
+          1
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.1.a.1",
+      "CPlabel": "16A1",
+      "sl2level": 16,
+      "sl2label": "16.48.1-16.a.1.3",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7647,
+      "label": "16.48.1-16.a.1.12",
+      "level": 16,
+      "index": 48,
+      "genus": 1,
+      "generators": [
+        [
+          1,
+          4,
+          8,
+          5
+        ],
+        [
+          1,
+          13,
+          0,
+          3
+        ],
+        [
+          3,
+          9,
+          8,
+          13
+        ],
+        [
+          7,
+          10,
+          8,
+          13
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.1.a.1",
+      "CPlabel": "16A1",
+      "sl2level": 16,
+      "sl2label": "16.48.1-16.a.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7657,
+      "label": "16.48.1-16.a.1.13",
+      "level": 16,
+      "index": 48,
+      "genus": 1,
+      "generators": [
+        [
+          5,
+          4,
+          8,
+          7
+        ],
+        [
+          5,
+          11,
+          0,
+          7
+        ],
+        [
+          11,
+          0,
+          0,
+          3
+        ],
+        [
+          13,
+          13,
+          0,
+          1
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.1.a.1",
+      "CPlabel": "16A1",
+      "sl2level": 16,
+      "sl2label": "16.48.1-16.a.1.1",
+      "determinant_label": "1.1.1"
+    },
+    {
+      "id": 7652,
+      "label": "16.48.1-16.a.1.14",
+      "level": 16,
+      "index": 48,
+      "genus": 1,
+      "generators": [
+        [
+          1,
+          15,
+          0,
+          11
+        ],
+        [
+          5,
+          8,
+          0,
+          11
+        ],
+        [
+          7,
+          11,
+          8,
+          1
+        ],
+        [
+          7,
+          12,
+          8,
+          5
+        ]
+      ],
+      "contains_negative_one": false,
+      "coarse_label": "16.24.1.a.1",
+      "CPlabel": "16A1",
+      "sl2level": 16,
+      "sl2label": "16.48.1-16.a.1.2",
+      "determinant_label": "1.1.1"
+    }
+  ],
+  "start": 1000,
+  "offset": 1100,
+  "query": "/api/gps_gl2zhat_fine/?_format=json&_fields=label,level,index,genus,generators,contains_negative_one,coarse_label,CPlabel,sl2level,sl2label,determinant_label&level=py%7B'$in':+%5B5,+6,+8,+9,+10,+12,+14,+15,+16,+18,+20,+22,+24,+27,+28,+30,+32,+36,+54%5D%7D&genus=py%7B'$lte':+1%7D&index=py%7B'$lte':+72%7D&contains_negative_one=pyFalse&_offset=1000",
+  "next": "/api/gps_gl2zhat_fine/?_format=json&_fields=label,level,index,genus,generators,contains_negative_one,coarse_label,CPlabel,sl2level,sl2label,determinant_label&level=py%7B'$in':+%5B5,+6,+8,+9,+10,+12,+14,+15,+16,+18,+20,+22,+24,+27,+28,+30,+32,+36,+54%5D%7D&genus=py%7B'$lte':+1%7D&index=py%7B'$lte':+72%7D&contains_negative_one=pyFalse&_offset=1100",
+  "rec_id": "label"
+}

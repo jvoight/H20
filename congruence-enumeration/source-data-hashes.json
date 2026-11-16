@@ -1,0 +1,15 @@
+{
+  "sources/csg0-lev0.dat": "9e37041142dedd2d1889494e477a2909822273d39b582d0214de0de9ce4ada73",
+  "sources/csg0-lev16.dat": "606cec42298be09afa447c7d8a7a231273e99d7ce38a860d05b801d7f64a3bab",
+  "sources/csg0-lev24.dat": "1e72b36ba21074b064a1cab5c8f14d2d10eb00c1ba78c01aec9b3f794158f46f",
+  "sources/csg0-lev32.dat": "64b1739631caf57dfa238d9fcc29b5d15cc6514017cb2727fa0163de9fe37968",
+  "sources/csg0-lev48.dat": "a900c8294fba2ef62aee22e74c9e685c28185804f74ae4cda3ac81d8ae095f49",
+  "sources/csg0-lev8.dat": "b264863a59fb2d4285df261655e438ea0ba2846c2a8e8ddeb6e91f1049db6be2",
+  "sources/csg1-lev0.dat": "299ee328c9401c0884bde897fb652c7cc9d3eb961bcbfa25ddffb725e429f697",
+  "sources/csg1-lev16.dat": "2abb9186b6424e3a178288705c6767b8592bad9d8b7165291daf1c82037a7822",
+  "sources/csg1-lev24.dat": "c3d73fce58695e26c3ecf2a4ccd1635a7ef547b3123bf5bcb17ce4655267fc64",
+  "sources/csg1-lev32.dat": "c65ca38fff5d79538073dbdec71f98759a975ce837f86f348a585fd04be4d5b6",
+  "sources/csg1-lev40.dat": "15c566cc94477a87c5ae55e863a4ff5e3ead9d4a7bde8d0eb04ff45026f45930",
+  "sources/csg1-lev48.dat": "bcf08e4950409091a20b22d1afd11e4de2456d454898a14d9b7c863cb0a505fb",
+  "sources/csg1-lev8.dat": "fc324515b32594bf1283a0054bfde8043fcb228cb9debef49817892eb3dffa07"
+}

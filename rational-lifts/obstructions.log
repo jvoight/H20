@@ -1,0 +1,26 @@
+Loading "../congruence-enumeration/representatives.m"
+ID 2 N 8 H C2*A4 A (C2^3*A4).C2^2 Q D4:C2 K C4
+1 [ 1, 2, 4, 4 ]
+3 [ 4, 4, 4, 4 ]
+5 [ 2, 2, 2, 2 ]
+7 [ 2, 2, 4, 4 ]
+involutions det -1 2
+abelian det-surjective subgroups [ C2*C4, C2*C4 ]
+det -1 involutions in these abelian subgroups [ 0, 0 ]
+ID 6 N 5 H C3 A C24:C2 Q OD16 K C4
+1 [ 1, 2, 4, 4 ]
+2 [ 8, 8, 8, 8 ]
+3 [ 8, 8, 8, 8 ]
+4 [ 2, 2, 4, 4 ]
+involutions det -1 2
+abelian det-surjective subgroups [ C8, C8 ]
+det -1 involutions in these abelian subgroups [ 0, 0 ]
+ID 7 N 12 H C2^2:SL(2,3) A Q8.(C6*A4).C2^2 Q C3:D4 K C6
+1 [ 1, 2, 3, 3, 6, 6 ]
+5 [ 4, 4, 4, 4, 4, 4 ]
+7 [ 2, 2, 6, 6, 6, 6 ]
+11 [ 2, 2, 2, 2, 2, 2 ]
+involutions det -1 6
+abelian det-surjective subgroups []
+det -1 involutions in these abelian subgroups []
+PASS

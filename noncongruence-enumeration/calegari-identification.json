@@ -1,0 +1,8 @@
+{
+  "map_id": 21479,
+  "lift_bits": 22,
+  "subgroup_id": "21479.22",
+  "method": "Numerical monodromy repeated with 240 and 480 steps; exact permutation comparison",
+  "provenance": "Frank Calegari, An explicit rank-four Asai-type motive of Hodge type (2,0)^2+(0,2)^2, unpublished supplied note, 2026",
+  "source_note": "Unpublished supplied note; not redistributed"
+}

@@ -1,0 +1,27 @@
+SetColumns(0);
+Q<t>:=FunctionField(Rationals());
+E1:=EllipticCurve([Q|2-t,-t,t*(t-1),0,0]);
+E2:=EllipticCurve([Q|0,(t+2)^2,0,8*t*(t+2),16*t^2]);
+C:=(t+2)*(t^3+6*t^2-12*t+8);
+D:=(t^2+4*t-8)*(t^4+8*t^3+8*t-8);
+E4:=EllipticCurve([Q|0,0,0,-27*C,54*D]);
+print "Discriminant of displayed equation (1):",Factorization(Numerator(Discriminant(E1)));
+print "Discriminant of displayed equation (2):",Factorization(Numerator(Discriminant(E2)));
+print "Equations (2) and (4) have identical j:",jInvariant(E2) eq jInvariant(E4);
+assert IsIsomorphic(E2,E4);
+assert Discriminant(E4) eq 6^12*t^3*(t-1)^2*(t+8);
+phi:=3*t^2-2*t^3;
+X:=EllipticCurve([Q|0,0,0,Evaluate(-27*C,phi),Evaluate(54*D,phi)]);
+print "Pullback discriminant:",Factorization(Numerator(Discriminant(X)));
+assert Degree(Numerator(Discriminant(X))) eq 18;
+assert [Degree(Numerator(a)):a in [aInvariants(X)[4],aInvariants(X)[5]]] eq [12,18];
+widths:=[18,6,4,3,2,1,1,1];
+assert &+widths eq 36 and #widths eq 8;
+assert 2+&+[w-1:w in widths] eq 30;
+assert &+widths/12-1 eq 2;
+// No congruence projective group in the independent CP tables has this passport.
+ChangeDirectory("sources");
+load "csg1-lev48.dat";
+assert not exists{r:r in L|r`genus eq 0 and r`index eq 36 and Sort(r`cusps) eq Sort(widths)};
+print "PASS: pg=2, rho=30, projectively noncongruence passport";
+quit;
