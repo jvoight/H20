@@ -51,3 +51,27 @@ remain unchanged.
 The legacy surface calculations were preserved without mathematical
 reverification. Their README records known missing dependencies and
 unfinished scripts; they are not claimed to form a passing test suite.
+
+## Reconstructed manuscript checks
+
+On 15 November 2026, the missing `herfurtner_checks.m` and
+`modular_dimensions.m` were reconstructed in `verification/` from the v11
+claims and the preserved Herfurtner models. Both passed with Magma 2.30-1,
+with one final PASS marker per log and no reported errors.
+
+- Herfurtner: five characteristic-zero models have the asserted fibers,
+  second Betti number 34, and trivial-lattice rank 30. All 28 diagnostic
+  entries for H13/H15/H25/H28 match at the seven stated primes. H7's full
+  quartics at 13 and 37 match and are irreducible with Galois group D4.
+  All 30 full polynomials are recorded, including their orientation signs.
+- Modular dimensions: independent dimension-formula and full modular-symbol
+  computations agree at levels 1 through 40. Explicit projective coset
+  orbits reproduce the cusp widths for Gamma_1(9), Gamma_1(10), and
+  Gamma_1(12), including SL2 index 96, ten cusps, and dimension 3 at level 12.
+  All six quadratic refinements have the asserted cusp and new dimensions.
+
+The scripts, explicit models, scope, and reproduction instructions are in
+[`verification/README.md`](verification/README.md); fresh logs are under
+`verification/results/`. This reconstruction verifies the stated finite
+checks. It does not identify the noncyclic Artin factors or prove a
+modularity claim from the Herfurtner diagnostics.
