@@ -1,0 +1,20 @@
+{
+  "summary": {
+    "sha256": "6231eb7a896331d1f16090ec673c465f7de3e54c3d7d46e3b3465fe09485f797",
+    "bytes": 3973,
+    "source": "/Users/jvoight/Library/CloudStorage/Dropbox/My Papers/90 H20/H20+/TeX/summaries/summary",
+    "imported": "2026-11-15"
+  },
+  "double-covers.txt": {
+    "sha256": "3ade496c7ab74fe21ddb9bc94891d7d991da9be65ab7a74f703040839ff3c46f",
+    "bytes": 11116,
+    "source": "/Users/jvoight/Library/CloudStorage/Dropbox/My Papers/90 H20/H20+/TeX/summaries/double-covers.txt",
+    "imported": "2026-11-15"
+  },
+  "k3-double-covers.txt": {
+    "sha256": "0b8023f824ef321fc7abbc7debde0d8d43aae161d6d780d286e0ed27948e9683",
+    "bytes": 7442,
+    "source": "/Users/jvoight/Library/CloudStorage/Dropbox/My Papers/90 H20/H20+/TeX/summaries/k3-double-covers.txt",
+    "imported": "2026-11-15"
+  }
+}

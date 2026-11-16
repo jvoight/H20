@@ -1,0 +1,119 @@
+Persson, Horikawa Surfaces with Maximal Picard Numbers, introduction: "The third section is an application of the previous.  It gives a sample of so called maximizing octics (for the precise definition see Sect. 1).  The list is in no way intended to be exhaustive (such an ambition would be very foolish in our opinion) on the contrary many obvious examples are left out more or less intentionally, and the purpose is merely to indicate how relatively easy it is to find such examples, and perhaps whet the readers appetite for finding his or her own."
+
+Persson goes on to give a substantial number of examples of octics in P^2 for which the double cover has (maximal) Picard rank 38.  The canonical on such a surface is O(8-4-1-1-1) = O(1), and there are three obvious sections, so if the singularities are all canonical then we get 303, not 202.  Of course such examples are no less interesting, but given my preference for getting a paper out at some point I suggest that we leave them aside, at least for now.  You can certainly put a noncanonical singularity on such a thing; the problem is that such singularities are usually (or always?) of multiplicity 4 or greater (I mean that any line through them meets the surface 4 times in that point) and so you get a genus-1 fibration by projecting away from that point.  This makes it very likely that we have some other construction that gives the same surface.  Alternatively, some of these surfaces have quotients that are K3 surfaces.  It would be nice if there were an example where (Z/2Z)^2 acts with one quotient being K3 and a second being P^2, because then we'd have a third quotient which is 202, but at least over Q it doesn't seem that Persson's examples work that way.  In his examples 3.2.1-3.2.3, the picture has an obvious symmetry, but the automorphism it expresses is (x:y:z:w) -> (-x:y:z:iw), so order 4 and squaring to the "hyperelliptic involution" (x:y:z:w) -> (x:y:z:-w).
+
+Instead, we might try looking for double covers of the Hirzebruch surface F_2 = P(1,1,2).  Indeed, a double cover branched along a curve of degree 10 will be a surface of degree 10 in P(1,1,2,5) and will have K = O(10-1-1-2-5) = O(1), but this time that means the canonical will have 2 sections, not 3.  So we are looking for curves of degree 10 whose singularities contribute 28 to the Picard number.  Since the double cover has canonical singularities it will be of general type, and so we don't have to worry about the surface being elliptic.
+
+Our goal, then, is to find curves of degree 10 on P(1,1,2) with singularities that give rise to
+canonical singularities of the double cover whose Picard contributions add to 28.  Intuitively this 
+should be reasonable; the arithmetic genus of such a curve is 16 (since the canonical is 
+O(10-1-1-2) = O(6), which meets the curve in degree 30) and the space of degree-10 forms is a
+P^35.  Since dim Aut(P(1,1,2)) = 7, there should be a 28-parameter family of such curves, and
+we should be able to impose 28 conditions as we wish.
+
+In practice, it might not be so easy.  If we simply impose 28 ordinary double points, for example,
+it seems likely that we would get a large number of candidate curves, defined over some large
+number field, and we are only interested in constructions over Q.  The natural way to simplify is
+to take the branch locus to be reducible.
+
+A double cover of P(1,1,2) branched on a sextic is a degree-6 surface in P(1,1,2,3), which is a 
+del Pezzo of degree 1.  So we would expect to be able to put 8 singularities on such a thing,
+counted appropriately.  In Persson's constructions one of the basic tools is the Steiner quartic, 
+the unique quartic curve in P^2 with three cusps.  Over P(1,1,2) there is an interesting analogue
+to this, namely the unique curve of degree 6 with four cusps (the "Steiner sextic"?)  We can write
+it down in coordinates as
+
+p_6 = -16*a^6 - 32*a^3*b^3 - 16*b^6 + 24*a^4*c + 24*a*b^3*c - 9*a^2*c^2 + c^3 = 0.
+
+The double cover here is a singular del Pezzo surface with four A2 singularities, which could
+presumably be expressed as the blowup of P^2 in four points and tangent vectors in general position.
+By taking additional curves of degree 2 we can hope to get maximal Picard number.  In particular:
+
+(1) if another component passes through a cusp in the direction of tangency, we get an E7 singularity.
+(2) a curve passing through a cusp in another direction gives a D5.
+(3) three curves meeting in a point give a D4.  If two of them meet with multiplicity n it is a D(2n+2).
+(4) two curves meeting in a point give A1; if the multiplicity is n, it's A(2n-1).
+(5) cusps give A(2n), and cusps meeting another component give D(2n+3).
+
+Curves of degree 4 give a P^8, so one expects only one that is cusp-tangent to all four cusps of the Steiner sextic.  This is correct; if the polynomial is p_4, one finds that the double cover t^2 = p_4 p_6 matches the form 576.3.e.g (minimal twist is 288.3.e.a).
+
+One can also consider intersections with the union of two conics.  For example, you can take
+one conic containing three of the cusps and one containing one of them and cusp-tangent at the
+other, and this gives a 202 surface.  There are other examples.  I should, for example, look at 
+conics that are tritangent to the Steiner sextic, or cusp-tangent once and tangent elsewhere, etc.  
+A lot of this is already in my file horikawa.mag.
+
+More generally, Kosta (https://www.maths.ed.ac.uk/sites/default/files/atoms/files/kosta.pdf), 
+theorem 2.9, claims to list the types of singularities for a del Pezzo of degree 1, of which 14
+give rank 8 (and one of them is 4A2).  However, the text seems to say that 8A1 and D4+4A1 
+are impossible, whereas the list in the theorem includes them.  She refers to T. Urabe,
+On singularities on degenerate Del Pezzo surfaces of degree 1, 2, Proceedings of Symposia in 
+Pure Mathematics, 40 Part 2 (1983), 587-590, which probably isn't easy to find.  On the other hand,
+it should be possible as follows.  Kurumadani lists rational elliptic fibrations with large
+contribution from reducible fibres: in particular, E8 A8 D8 E7+A1 A5+A2+A1 2A4 4A2 E6+A2 A7+A1
+D6+2A1 D5+A3 2D4 2A3+2A1, while Kosta's list is A8 D8 A7+A1 A5+A2+A1 2A4 4A2 E6+A2 E7+A1
+D6+2A1 D5+A3 2D4 D4+4A1 2A3+2A1 8A1.  So Kosta is missing E8 and Kurumadani lacks 8A1 and 
+D4+4A1.  Kurumadani is right; for example, 8A1 would mean torsion of order 16, but
+that would imply a torsion point that is 0 on all the component groups (multiplying by 2),
+and I'm sure that's impossible.  Similarly for the other one.  Anyway, the point is that starting
+from the elliptic surface you can blow down the 0 section and find the del Pezzo surface.
+
+I wrote down the A3A3A1A1 sextic and then realized that it consists of three conics, two pairs
+being tangent.  On the other hand, for, say, the E8, it's going to be quite hard to figure out
+which quartics actually give you maximal Picard number from singularities.  More thought needed.
+
+---
+
+Let's start from the bottom.  Take five conics first.  They're all smooth, so the only possible
+canonical singularities are simple contact (A1), simple tangency (A3), three meeting at a point 
+(D4), or tangency and another meeting there (D6).  It's not possible for three conics to be 
+mutually tangent at different points (proof: in P(1,1,2) take the first one to be defined by z = 0; 
+the other two are z + l_1^2 = 0, z + l_2^2 = 0, and we need l_1^2 - l_2^2 to be square, which 
+implies that they are multiples of each other).
+
+Example.  Let C_1, ..., C_4 be four conics such that C_i is tangent to C_i+1 for all i.  This gives
+us four A3 singularities on the double cover above the points of tangency and four A1 above the
+intersections of C_i with C_i+2.  The automorphism group can be used to fix C_1, C_2, C_3; then
+C_4 is restricted to a one-dimensional family.  By default C_5 will meet each of the C_i in 
+two distinct points and the singularities will contribute 24 to the Picard number.  So, as
+expected, we need to impose 4 more conditions, consisting of tangencies, concurrences with
+tangent points, and concurrences with points of intersection.  Generically these conditions
+will be incompatible, but we expect that for finitely many choices of C_4 they can be satisfied.
+However, as before, we cannot make C_5 tangent to both C_i and C_i+1.  Also, if C_5 is tangent
+to C_i, it cannot pass through an intersection of C_1 with any other conic.  There are now several 
+choices, corresponding to partitions of {*1,1,2,2,3,3,4,4*} into four pairs such that {*n,n+1*}
+appears at most once for all n and not both {*n,n*} and {*n+1,n+1*} appear, up to the obvious D_4 
+symmetry.  We have the following possibilities:
+
+(1) 1,1 3,3 2,4 2,4: C_5 is tangent to two opposite conics and passes through the two intersection
+points of the other two.  Singularities are D4D4A3A3A3A3A3A3A1A1.
+(2) 1,1 2,3 2,4 3,4: tangent to one, two adjacent points of tangency, one intersection point.
+(3) 1,2 1,3 2,4 3,4: two opposite points of tangency, two intersection points.
+(4) 1,2 2,3 3,4 4,1: all four tangencies.
+
+To find the appropriate curves, we take C_1, C_2, C_4 to be defined by c = 0, c - a^2 = 0, 
+c - b^2 = 0, and then C_3 is defined by c + 4(a^2 + tab + b^2)/(t^2-4).  We now consider the cases,
+letting C_5 be defined by c + ua^2 + vab + wb^2.
+
+(1) To pass through the intersection points of C_2, C_4 we need 1+u+v+w = 1+u-v+w = 0, i.e.,
+v = 0, u+w = -1.  The only conics in this linear system tangent to C_1 are C_2, C_4, so this is
+not possible.
+(2) A conic that is on the two adjacent points of tangency 2,3 and 3,4 is a linear combination of
+a^2+b^2 + (-t^2/4-1)c, ab + ct/2.  In order to be tangent to c = 0 it must be 
+a^2 + 2*a*b + b^2 + (-1/4*t^2 + t - 1)*c or a^2 - 2*a*b + b^2 + (-1/4*t^2 - t - 1)*c.  We cannot
+take t = +- 2, and by symmetry we can change (a,b,c) to (a,-b,c) and t to -t.  Thus we need
+only consider the first of these, and the condition of containing one of (+-1:1:1) forces t = 6.
+We have thus found the configuration where C_3 is defined by c + 4(a^2+6ab+b^2)/32 and
+C_5 by a^2 + 2ab + b^2 -4c.  Magma confirms that the double cover branched at the union of these
+has two D6, one D4, three A3, and two conjugate A1 singularities, making 28.
+(3) To be on the points of tangency (1,2) (3,4) and to be on one of the points of (2,4) means
+being either a^2 + (t/2+1)ab + tc/2 or a^2 + (t/2-1)ab - tc/2.  Again we have the symmetry
+(a,b,c) -> (a,-b,c), t -> -t, so we need only consider the first of these, and we determine the
+condition for this curve to meet a (1,3)-point, i.e., t must be such that a^2 + tab + b^2 and
+a^2 + (t/2+1) ab share a root.  This root can't be a = 0, so it is a = -(t/2+1)b and we are
+looking for roots of the quadratic (-t/2-1)^2-t(t/2+1)+1 = 0.  The roots are +- 2 sqrt 2, so there
+are two such configurations but they are not defined over Q.
+(4) Independent of t, the conic ab + t/2 c passes through the four points of tangency.  It appears
+that changing the value of t just gives us different twists of the same modular form 
+200.3.g.b, though I'm not quite sure how this happens.
+

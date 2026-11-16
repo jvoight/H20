@@ -1,0 +1,115 @@
+Let S be a singular K3 surface and let pi: S -> P^1 be an elliptic fibration.  If the rank of pi
+is 0 and there is a rational set of two multiplicative fibres of pi, we may apply a twist ramified
+under that set to obtain a (2,0,2)-surface with an elliptic fibration.  (If the rank is positive,
+the twist is very unlikely to have positive rank, so the surface will not be maximal.)  On the
+other hand, if there are already two starred fibres, the K3 surface is a twist of a rational 
+elliptic surface and we might as well find it that way.  Shimada lists over 700 possible 
+reducible fibre configurations for singular K3s, but about half of these do not correspond to
+any actual fibration, and another 100 or so have multiple starred fibres.  This leaves about 250
+possible configurations, a few of which have two choices for the torsion (and a few more perhaps
+admitting different configurations of the same torsion subgroup).  Some of these will be
+isogenous to others, but it still seems like a lot to do exhaustively.
+
+Perhaps the natural way to organize the surfaces and their fibrations is by the discriminant of
+the K3 surface, which can be any negative integer congruent to 0 or 3 mod 4.
+
+Example.  Consider the K3 surface with a D4E6E8 fibration and thus discriminant -12.  The genus
+contains 30 lattices, but only 5 of them have maximal rank:
+
+D4E6E8, trivial torsion
+A5D6E7, torsion Z/2Z
+3A1 A5D10, torsion (Z/2Z)^2
+2A2 A3A11, torsion Z/6Z
+D12E6, trivial torsion
+
+All but the third and fourth of these are twists of rational surfaces; for example, the last is a
+twist of Herfurtner's I8 II I1 I1 surface.  Thus there are two surfaces that we really need to 
+construct.  We recognize the 2A2 A3A11 surface as a double cover of the rational A1A2A3A6 ramified 
+at the A1 and A6.  The two A2 fibres and the two I1 fibres are not rational, so we have three 
+pairs of rational fibres at which to twist, giving fibre types I12* I4* 2I3 2I1, I12 I4 2I3* 2I1, 
+I12 I4 2I3 2I1*.  Only the first of these gives square discriminant and we rapidly find the form
+12.3.d.a.
+
+A twist of 3A1 A5D10, to give a rational modular form, would have to be ramified at A5 and one A1.
+As before, we can find 3A1 A5D10 as a triple cover of a rational surface with 2A1 D6, totally
+ramified at D6 and one A1.  This is the Legendre family $y^2 = x(x-1)(x-t)$, so the twisted 
+triple cover is $t(t-1)y^2 = x(x-1)(x-t^3)$.  I don't see a modular form, but this suggests
+a new construction: starting from a surface with one starred and two multiplicative fibres, take
+a triple cover ramified at the starred fibre and then twist.
+
+(Alternatively one might start by writing down the A5D6E7 starting from the Elkies-Kumar 
+construction for discriminant 28, finding the equation
+
+y^2 = x^3 + (3*v^2 - 2*v)*x^2 + (-v^5 + 3*v^4 - 3*v^3 + v^2)*x.)
+
+We now briefly describe the first few discriminants and the corresponding fibrations that have a 
+twist relevant for this project.  
+
+*Discriminant -3.*  We start with discriminant -3, where the surface has 6 types of
+fibration, but only 4 of maximal rank.  For 3E6 there are no sensible twists, since there are no
+unstarred singular fibres.  For 2E8 A2A0 (to avoid hybridizing the notation we use A0 for a
+singular irreducible fibre, i.e., I1), the twist is the 2E8D6D4 we have seen elsewhere.  The
+remaining examples, A11D7A0A0A0 and A1A1D16A0A0, are isogenous, so we only need to consider one of 
+them, say the first one.  We construct it as a triple cover of the A3D5A0 rational family, which is
+in fact isogenous to the Legendre surface.  The twist at two nonrational A0 fibres has nonsquare 
+discriminant; at A11 and the rational A0, we get 288.3.e.a.
+
+*Discriminant -4.*  A K3 surface of rank 20 and discriminant -4 has three types of fibration that
+have maximal rank and at most one starred fibre, namely A9A9A0A0A0A0, A15A3A0A0A0A0, D16A1A1A0A0.
+To write down the A9A9, we do a base change of A4A4A0A0 totally ramified at the A4 fibres.
+There are two possible twists, but they are isogenous (a 5-isogeny interchanges A4 and A0 fibres),
+so it is enough to consider one, and it gives us 128.3.d.c.
+
+For A15A3A0A0A0A0, we can again take a double cover of A7A1A0A0.  There are two rational and two 
+conjugate A0 fibres, and so there are 7 possible twists, all having square discriminant.  The
+relevant modular forms are 128.3.d.b, 8.3.d.a, with one set of eigenvalues unexplained.
+
+Finally, we can write down A1A1D16 from standard K3 surface methods, finding the equation
+y^2 = x^3 + (1/4-3/2*t^2 + t^3)*x^2 + 1/64*x.  All the multiplicative fibres are rational, so
+we have 6 twists, all of which give the same coefficients as something on the list of curves
+with 4 singular fibres; two each for indices 25, 11, 30.  There is no obvious geometric 
+explanation for this.
+
+*Discriminant -7.*  The only suitable fibration is the one with three A6 and three A0 fibres.
+(A 7-isogeny exchanges the three rational A6 fibres with the three nonrational A0 fibres.)
+If we twist at two A6 fibres (it doesn't matter which), the discriminant is not a square.
+
+*Discriminant -8.*  There are 5 suitable types of fibration, with root sublattices A7A7A3A1,
+A11A5A1A1, D14A3A1, A15A1A1A1, E6A11A1 and suitable torsion.
+
+For A7A7A3A1 (note that this too is a double cover of A7A1A0A0), there are 7 rational twists, but 
+only 3 with square discriminant.  Two of these give the same unexplained eigenvalues as for 
+A15A3, one gives 512.3.f.j.
+
+We can write down A11A5A1A1 as a double cover of the rational surface with A6A3A2A1.  There
+is only one twist with vertical rank 28 and square discriminant: namely, we have to twist at
+the A11 and A5.  This yields a twist of 512.3.f.a.
+
+A15A1A1A1 is a double cover of A7A1A0A0.  The only twist with square discriminant is at A15 and
+the new A1.  It gives the form 512.3.f.j.
+
+K3 surface methods allow us to convert A15A1A1A1 into E6A11A1, but there are no twists with
+square discriminant and so nothing to do.  We can also obtain D14A3A1 by K3 surface methods.  Since
+the two I1 fibres are conjugate, we can get a square discriminant and a surface defined over Q
+only by twisting at the A3A1.  The modular form is 200.3.l.a.
+
+There is nothing for discriminant -11, and for discriminant -12 we have already considered one
+of the lattices, so we move on to the other one, the genus of E8E7A2A1.  There are three
+lattices that do not already have two starred fibres, with reducible fibres 3A1 3A5,
+2A1 A2 D14, and 2A1 D5 A11.
+
+The first of these is a double cover of I1I2I3I6 ramified at I1 and I3.  There is only one twist
+with square discriminant, at the two ramified fibres.  We obtain the form 12.3.d.a.
+
+2A1 D5 A11 is a quadratic twist of A1A1D16 from before, at the D16 and an A0 fibre.  The only
+quadratic twists with square discriminant are at A11, A0, so these have already been considered.
+
+Finally, starting from 2A1D5A11 we use K3 surface methods to find the fibration with 2A1A2D14.
+The only twist giving square discriminant is at the I3 and I1 fibres, and this gives the rather
+surprising modular form 1800.3.v.b.
+
+[I could go on like this, but it's not going to get easier.  For one of the genera of discriminant 
+-15 we have A2A9E7 and 2A2 A14.  However, there is no way to twist A2A9E7
+to get square discriminant, and the same is true of 2A2 A14 unless one of the
+I1 fibres is rational--or of course one could twist at the A14 and all four
+I1 fibres to get a 303 elliptic surface.]

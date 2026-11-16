@@ -1,0 +1,130 @@
+We consider the curve in the form given by EllipticCurveWithjInvariant,
+the twist that removes as many I0* as possible, and the twist that
+removes as many I0*, II, III, IV as possible.
+
+*** index 2
+There are 31 curves, all of which can be massaged to give the E6E6D6 fibration
+on a K3 surface.
+
+*** index 3
+There are 2 curves, one of which gives us the known D7E7E7E7 surface from
+Herfurtner.
+
+*** index 4
+There are 3 curves, one of which gives the known D8E6E7E7.
+
+*** index 5
+There is 1 curve, giving D9E6E6E7.
+
+*** index 6
+There are 107 curves.  One of them gives D10E6E6E6.  There are also 16
+that give potentially interesting (3,0,3) surfaces with D10 4xE7.
+
+*** index 8
+There are 23 curves.  We get some K3 surfaces with two E6 and two
+multiplicative fibres, but these are just twists of rational surfaces with
+4 singular fibres.
+
+*** index 9
+There are 2 curves, one of which gives A5A2E7E7E7.  Since this has
+discriminant 6*3*3*3*3 (not square) we don't expect a form.
+
+*** index 10
+There are 15 curves, one of which gives A4A4E6E7E7.  Again we don't expect
+a form.  The others give (3,0,3) surfaces with D14 4xE6.
+
+*** index 12
+There are 211 curves.  We find the following (2,0,2) surfaces:
+D12 E7E7 A1A1
+E7E7 D8 A3A3
+E6E6E6 A8 A2
+E7E7 D6 A7 A1
+all of which have square discriminant somehow.
+
+The point counts suggest 512.3.f.a (or 512.3.f.g), 27.3.b.b, and one
+mysterious set:
+[ <5, 1>, <7, 0>, <11, 0>, <13, 9>, <17, 0>, <19, 0>, <23, 0>, <29, 22>, 
+  <31, 0>, <37, 21>, <41, 0>, <43, 0>, <47, 0>, <53, 6>, <59, 0>, <61, 54>, 
+  <67, 0>, <71, 0>, <73, 4>, <79, 0>, <83, 0>, <89, 29>, <97, 0>, <101, 1>, 
+  <103, 0>, <107, 0>, <109, 54>, <113, 19>, <127, 0>, <131, 0>, <137, 0>, 
+  <139, 0>, <149, 144>, <151, 0>, <157, 54>, <163, 0>, <167, 0>, <173, 3>, 
+  <179, 0>, <181, 144>, <191, 0>, <193, 0>, <197, 193>, <199, 0> ]
+(This kind of mysterious set could result from a reducible representation?
+
+Unsurprisingly 27.3.b.b is the one with the E6's.  The others can be related
+by 2-isogenies.
+
+*** index 14
+There is one curve, X_0(13).  We find nothing that is obviously rigid.
+
+*** index 15
+There is one curve, which gives rise to a (3,0,3) surface with nonsquare
+discriminant (3III* I5* I5).
+
+*** index 16
+There are 27 curves, which give a (4,0,4) and some (3,0,3) surfaces:
+IV* 4xIII* I8I8
+4xIV* I12 I4
+4xIV* I14 I2
+4xIV^* I8I8
+
+*** index 18
+
+There are 49 curves, which give 5 (2,0,2) surfaces:
+III*III* I6I6 I3I3
+III*III* I10I5I2I1
+III*III* I9I3I3I3 (not square discriminant)
+
+The point counts suggest 3 different twist families from the square
+discriminants, which I am oddly unable to find.  Some of these are base
+changes of their twist by 3, i.e., we get an automorphism when we
+extend the base, but that doesn't necessarily give us a decomposition.
+
+*** index 20
+
+We find 10 curves, of which 6 give us IV*IV* 4xI5.  There are 3 different
+twist families--or maybe all the same.  In any case it seems obscure.
+
+*** index 21
+
+One curve, which we could twist to a 606 with 5III* 3I7*.
+
+*** index 24
+
+342 curves, but none of them seems to give a 202 somehow.  There are
+some interesting K3 surfaces, such as A11A3A2A2, A15A3, A15A1A1A1, and
+some 303, but no 202.
+
+*** index 27
+
+2 curves, giving us a 606 and 707.
+
+*** index 28
+
+9 curves, but all of them give genus 4 or greater.
+
+*** index 30
+
+8 curves, all giving genus 3 or greater.
+
+*** index 32
+
+10 curves, all giving genus 8.
+
+*** index 36
+
+138 curves, of which 24 give 202.  These are all semistable:
+4xI6 4xI3
+2xI9 6xI3
+I27 I3 6xI1
+I10I10 I5I5 I2I2 I1I1
+3xI9 I3I3 3xI1
+I18 I9 3xI2 3xI1
+
+Some of these look like covers of the extremal rational semistable surfaces:
+for example, 2xI9 6xI3 would be a triple cover of 4xI3 totally ramified at
+two of the I3, and I18 I9 3xI2 3xI1 of I6I3I2I1, etc.  As we noticed
+previously, I10I10 etc. gives 10.3.c.a.  From 4xI6 4xI3 we get 18.3.b.a,
+from 2xI9 6xI3 we get 9.3.d.a, from I27 I3 6xI1 9.3.d.a, from 3xI9 I3I3 3xI1
+9.3.d.a, and from I18 we get 18.3.b.a again.
+
