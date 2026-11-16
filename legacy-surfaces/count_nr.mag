@@ -1,0 +1,47 @@
+function reduce_p(ell,p)
+  F := GF(p);
+  Ft := FunctionField(F);
+  fld := BaseRing(ell);
+  poly := DefiningPolynomial(fld);
+  poly_p := PolynomialRing(Ft)!poly;
+  eft := ext<Ft|poly_p>;
+  ellp := EllipticCurve([eft|Eltseq(i): i in aInvariants(ell)]);
+  return ellp;
+end function;
+
+// bc would be ChangeRing(x0_15,GF(p))
+// models would be, e.g., [reduce_p(i,p): i in [tws[1]] cat alts[1]]
+// this function is supposed to be a replacement for the Magma intrinsic
+// NumberOfPointsOnEllipticSurface
+function count_points_surface(models,bc)
+  li := LocalInformation(models[1]);
+  fldp := BaseRing(models[1]);
+  bp := BaseRing(fldp);
+  f0 := ConstantField(fldp);
+  pts := RationalPoints(bc);
+  ffbc := FunctionField(bc);
+  bbc := BaseRing(ffbc);
+  pls_f0 := Places(fldp,1);
+  npts := [];
+  for i in pls_f0 do
+    if exists(li_i){l: l in li|l[1] eq i} then
+      // there must be an easier way
+      // also, this assumes type In for now
+      // n := rep{x: x in [1..10^#Sprintf("%o",li_i[5])]|li_i[5] eq KodairaSymbol("I"*Sprintf("%o",x))};
+      n := StringToInteger(s[2..#s]) where s is Sprintf("%o",li_i[5]);
+      ct := (li_i[6] select n*#f0 else (2-n mod 2)*(#f0+1)+(IsOdd(n) select 1 else 0));
+      Append(~npts,ct);
+    else
+      found := false;
+      for m in models do try
+          ec := EllipticCurve([Evaluate(a,i): a in aInvariants(m)]);
+          Append(~npts,#ec);
+          found := true;
+          break m;
+        catch e; end try;
+      end for;
+      error if not found, "need a model adapted to the place", i;
+    end if;
+  end for;
+  return &+npts,pls_f0,npts;
+end function;

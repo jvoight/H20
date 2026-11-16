@@ -1,0 +1,35 @@
+// There are 5 root lattices:
+// D14A3A1
+// E6A11A1
+// A15A1A1A1
+// A11A5A1A1
+// A7A7A3A1
+
+// See the file for details of the construction, but we construct the
+// E6A11A1 surface (which has a point of order 3) as a specialization of
+// the general form y^2 + axy + by = x^3 for an elliptic curve with a point
+// of order 3.
+ec2 := EllipticCurve([-2*s^2+4*s,0,s^2,0,0]);
+
+// We find D14A3A1 by embedding the E6A11A1 into projective space and
+// writing down an obvious fibration which happens to be correct.
+ec1 := EllipticCurve([0,s^3+2*s^2+8*s-16,0,-64*s+64,0]);
+// one could even shrink it a bit more by sending s to 2s and twisting
+// ec1 := EllipticCurve([0,s^3+s^2+2*s-2,0,-2*s+1,0]);
+
+Qs<s> := FunctionField(Q);
+// A15A1A1A1 is a base change of I8I2I1I1 ramified at I8 and one I1.
+leg := EllipticCurve([0,-s^2-1,0,s^2,0]);
+tw := QuadraticTwist(Codomain(TwoIsogeny(leg![1,0])),-1);
+assert #TorsionSubgroup(tw) eq 4;
+ec3 := BaseChange(tw,hom<Qs->Qs|-1/(s^2+1)>);
+
+// A11A5A1A1 is a base change of the familiar I6I3I2I1 family, ramified at
+// the I6 and I3 fibres.
+ec := EllipticCurve([s,-s^2+3*s-2,-s^2+3*s-2,0,0]);
+ec4 := BaseChange(ec6,hom<Qs->Qs|(2*s^2-1)/(s^2-1)>);
+
+// A7A7A3A1 is the universal elliptic curve with a point of order 8.
+ec5 := EllipticCurve([(s^2 + 4*s - 4)/(s^2 + 2*s),(s - 2)/s^2,(s-2)/s^2,0,0]);
+
+ecs_disc8 := [ec1,ec2,ec3,ec4,ec5];

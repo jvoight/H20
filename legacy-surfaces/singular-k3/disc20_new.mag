@@ -1,0 +1,117 @@
+// There are seven possibilities in discriminant 20:
+// A1A9E8  specialize E-K A8E7
+// A1A1A9E7 isogenous to Schutt #259
+// A4D14
+// A1A1A4D12 Schutt #184
+// A1A9D8 Schutt #176
+// A1A1A2A14 Schutt, fig. 13 on p. 12
+// A1A4A4A9 base change of I5I5I1I1 (Herfurtner), so probably only defined
+// over Q(sqrt 5)
+
+// A8E7
+Q4<a1,b2,b3,e> := FunctionField(Q,4);
+Q4t<t> := FunctionField(Q4);
+b1 := b3 + a1; 
+a2 := 2*b2+b1^2-2*a1*b1+a1^2;
+c1 := 2*b1-a1;
+
+a := 1+a1*t+a2*t^2;
+b := e*(1+b1*t+b2*t^2);
+c := e^2*(1+c1*t);
+
+ai := [0,a,0,2*b*t^3,c*t^6];
+ec := EllipticCurve(ai);
+// we start by specializing the A8 at the origin to A9.
+
+Q3<a1,b2,b3> := FunctionField(Q,3);
+Q3t<t> := FunctionField(Q3);
+e := a1*b3^2+2*b2*b3+2*b3^3;
+b1 := b3 + a1; 
+a2 := 2*b2+b1^2-2*a1*b1+a1^2;
+c1 := 2*b1-a1;
+
+a := 1+a1*t+a2*t^2;
+b := e*(1+b1*t+b2*t^2);
+c := e^2*(1+c1*t);
+
+ai := [0,a,0,2*b*t^3,c*t^6];
+ec := EllipticCurve(ai);
+// note that we have an extra parameter here: a1, b2, b3, t have weights
+// 1, 2, 1, -1 respectively
+
+// Now we specialize to E8.
+Q2<a1,b3> := FunctionField(Q,2);
+Q2t<t> := FunctionField(Q2);
+b2 := 0; 
+e := a1*b3^2+2*b2*b3+2*b3^3;
+b1 := b3 + a1; 
+a2 := 2*b2+b1^2-2*a1*b1+a1^2;
+c1 := 2*b1-a1;
+
+a := 1+a1*t+a2*t^2;
+b := e*(1+b1*t+b2*t^2);
+c := e^2*(1+c1*t);
+
+ai := [0,a,0,2*b*t^3,c*t^6];
+ec1 := EllipticCurve(ai);
+// we can specialize over Q(sqrt 5)
+// this comes from factoring the discriminant of the location of the I1's
+Qr<r> := QuadraticField(5);
+Qrsr<sr> := FunctionField(Qr);
+ec1sr := BaseChange(ec,hom<Q2t->Qrsr|hom<Q2->Qrsr|(7+5*r)/2,1>,sr>);
+// The E8 and A9 fibres are rational, so we can leave them where they are,
+// at infinity and 0.  If we scale the A1 to be at a rational point, then
+// the other pair is not rational over Q.  So the surface does not descend.
+
+X321 := EllipticCurve([-3*(s-1)^3*(s-4),-2*(s-1)^5*(s+8)]);
+// from Schutt
+bc2 := BaseChange(X321,hom<Qs->Qs|s*(s^2-5*s+5)^2/4>);
+// twist away the D4
+ch2 := MinimalModel(QuadraticTwist(bc2,s^2-3*s+1));
+ec2 := Codomain(TwoIsogeny(Points(ch2,Roots(DivisionPolynomial(ch2,2))[1,1])[1]));
+// And there's a better twist, but still, this is it.
+// Unfortunately, no good twists.  We'd have to twist at I10 and I2,
+// but the I2 are not rational.
+
+// D14A4?  Maybe we can get it from E-K by producing A10D8 and twisting.
+Qn<a1,a2,b1,b2,f> := FunctionField(Q,5);
+Qnt<t> := FunctionField(Qn);
+e := 8*(f-b2)^2*(2*f+b2)/27;
+a3 := 4*(b2^2 - f^2)/3;
+a := 1 + a1*t + a2*t^2 + a3*t^3;
+b := e*(1 + b1*t + b2*t^2);
+c := e^2*(1 + t);
+ai := [0,a,0,2*b*t^4,c*t^8];
+ec := EllipticCurve(ai);
+// so far we have I9 I1*.  So if we can get I10 I5* we're in good shape.
+
+Qn<b1,b2,f> := FunctionField(Q,3);
+Qnt<t> := FunctionField(Qn);
+a1 := 2*b1-1;
+a2 := 4/3*b1*b2 - 4/3*b1*f - 4/9*b2^2 + 8/9*b2*f - 4/9*f^2;
+e := 8*(f-b2)^2*(2*f+b2)/27;
+a3 := 4*(b2^2 - f^2)/3;
+a := 1 + a1*t + a2*t^2 + a3*t^3;
+b := e*(1 + b1*t + b2*t^2);
+c := e^2*(1 + t);
+ai := [0,a,0,2*b*t^4,c*t^8];
+ec := EllipticCurve(ai);
+// I10 I2*; just need three more at infinity
+// we can find them by a Groebner basis computation, adding 
+ec := BaseChange(ec,hom<Qnt->Qs|hom<Qn->Qs|-26/3,-115/9,-5/18>,s>);
+// and there it is.
+ec3 := MinimalDegreeModel(QuadraticTwist(ec,s));
+
+
+// A1A1A4D12 is also pulled back from X321.
+bc4 := BaseChange(X321,hom<Qs->Qs|-s^4*(s^2+2*s+5)/(4*(1-2*s))>);
+ec4 := MinimalModel(QuadraticTwist(bc4,(s^3+s^2+2*s-2)*s));
+// It does have a good twist, at the I5 and I1 fibres.
+
+// A1A9D8 is isogenous to this one.
+ec5 := Codomain(TwoIsogeny(Points(ec4,Roots(DivisionPolynomial(ec4,2))[1,1])[1]));
+
+// A1A1A2A14, quoted from Schutt
+ec6 := EllipticCurve([-3*(125*s^6-786*s^5+1575*s^4+1300*s^3+315*s^2+30*s+1)*(5*s^2+10*s+1),2*(15625*s^12+112986*s^10-100500*s^11-941300*s^9+1514175*s^8+3849240*s^7+2658380*s^6+912696*s^5+180375*s^4+21500*s^3+1530*s^2+60*s+1)]);
+
+ecs_disc20 := [ec2,ec3,ec4,ec5,ec6];

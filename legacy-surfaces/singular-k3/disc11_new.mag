@@ -1,0 +1,45 @@
+// The lattice of discriminant 11 is in a genus with only one lattice that
+// gives rise to a rank-18 fibration, namely A10E8.  Fortunately E-K 33
+// constructs A10E6, so we should be able to find it.
+Q2<d0,d1> := FunctionField(Q,2);
+Q2t<t> := FunctionField(Q2);
+c0 := (d1+d0)^2 - d1;
+c1 := d1^2 + 2*d0*d1;
+d := d1*t + d0;
+c := d1^2*t^2 + c1*t + c0;
+b := c + d;
+a := c + 2*d + 1;
+ai := [0,a*t^2,0,2*b*t^3,c*t^4];
+ec := EllipticCurve(ai);
+
+// now we want the trailing coefficients to be 0.
+// That means first we want d0^2 + 2d0d1 + d1^2 - d1 = 0, which means
+// d0 = -(t+2)/(t+1)^2, d1 = 1/(t+1)^2.
+
+Qu<u> := FunctionField(Q);
+Quv<v> := FunctionField(Qu);
+d0 := -(u+2)/(u+1)^2;
+d1 := 1/(u+1)^2;
+c0 := (d1+d0)^2 - d1;
+c1 := d1^2 + 2*d0*d1;
+d := d1*v + d0;
+c := d1^2*v^2 + c1*v + c0;
+b := c + d;
+a := c + 2*d + 1;
+ai := [0,a*v^2,0,2*b*v^3,c*v^4];
+ec := EllipticCurve(ai);
+
+// then we need u = -2 to get E8.
+
+d0 := 0;
+d1 := 1;
+c0 := (d1+d0)^2 - d1;
+c1 := d1^2 + 2*d0*d1;
+d := d1*u + d0;
+c := d1^2*u^2 + c1*u + c0;
+b := c + d;
+a := c + 2*d + 1;
+ai := [0,a*u^2,0,2*b*u^3,c*u^4];
+ec1 := EllipticCurve(ai);
+
+ecs_disc11 := [ec1];

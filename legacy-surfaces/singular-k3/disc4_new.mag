@@ -1,0 +1,33 @@
+// In discriminant 4, the interesting choices have reducible fibres
+// D16A1A1, A15A3, A9A9.
+// Get A9A9 by a double cover of the I5I5I1I1 surface from Herfurtner.
+
+Qs<s> := FunctionField(Q);
+i5s := QuadraticTwist(EllipticCurve([-3*(s^4-12*s^3+14*s^2+12*s+1),2*(s^6-18*s^5+75*s^4+75*s^2+18*s+1)]),3);
+ec1 := BaseChange(i5s,hom<Qs->Qs|s^2>);
+
+// The A3A15 has 4-torsion and you can guess an equation, or do a base change
+// from I8I2I1I1.
+ec2 := EllipticCurve([1,s^4,s^4,0,0]);
+
+// Finally, with a bit of experimentation we can guess the condition for
+// D16 at infinity
+Qn<a0,a1,a2,a3,b0> := FunctionField(Q,5);
+Qnt<t> := FunctionField(Qn);
+ai := [0,a0+a1*t+a2*t^2+a3*t^3,0,b0,0];
+ec := EllipticCurve(ai);
+
+// with a bit more we can force A1 at 0
+Q3<a0,a2,a3> := FunctionField(Q,3);
+Q3t<t> := FunctionField(Q3);
+b0 := a0^2/4;
+ai := [0,a0+a2*t^2+a3*t^3,0,b0,0];
+ec := EllipticCurve(ai);
+
+// and with still more, at 1
+a3 := 1; a2 := -3/2; a0 := 1/4;
+b0 := a0^2/4;
+ai := [0,a0+a2*s^2+a3*s^3,0,b0,0];
+ec3 := EllipticCurve(ai);
+
+ecs_disc4 := [ec1,ec2,ec3];

@@ -1,0 +1,117 @@
+// why we can't find a modular curve that realizes 20.3.f.a by itself
+AttachSpec("~/magma/ModFrmGL2/ModFrmGL2/ModFrmGL2.spec");
+load "test_j.mag";
+c4<i> := CyclotomicField(4);
+dg := DirichletGroup(20);
+dg20 := DirichletGroup(20,c4);
+dg20elts := [dg20.1^i*dg20.2^j: i in [0,1], j in [0..3]];
+dg10 := DirichletGroup(10,c4);                              
+dg10elts := [dg10.1^i: i in [0..3]];
+cf_3_20 := Newforms(CuspForms(dg20.2,3))[1,1];
+cf_3_10 := Newforms(CuspForms(dg10.1,3))[1,1];
+
+// Gamma_1(20): all invertible matrices of the form [1,*;0,*] mod 20
+g1_20 := sub<GL(2,Integers(20))|[1,0,0,3],[1,0,0,11],[1,1,0,1]>; 
+g20 := PSL2Subgroup(g1_20);
+ms20 := ModularSymbols(g20,3);               
+cs20 := CuspidalSubspace(ms20);
+// There is an old space of dimension 2, and the new spaces for the different
+// characters have dimension 0, 4, 2, 4.  Since the dimension is twice as
+// large for modular symbols, we get 2*(2*2+0+4+2+4) = 28.
+assert Dimension(cs20) eq 28;
+
+// The one we care about is 20.3.f.a, which has the character of order 4.
+// That means we want to have [11,0,0,1] in our group too.
+g1_20_chi := sub<GL(2,Integers(20))|[1,0,0,3],[1,0,0,11],[1,1,0,1],[11,0,0,1]>;
+g20_chi := PSL2Subgroup(g1_20_chi);
+ms20_chi := ModularSymbols(g20_chi,3);
+cs20_chi := CuspidalSubspace(ms20_chi);
+// We still have the old subspace of dimension 2, but now the new space is
+// only 2-dimensional.  So 2*(2*2+2) = 12.
+assert Dimension(cs20_chi) eq 12;
+
+// Check (cf. LMFDB):
+assert CharacteristicPolynomial(HeckeOperator(cs20_chi,7)) eq (s^2-4*s+8)^4*(s^2+14*s+98)^2;
+// now, how large a subgroup can we find?
+gl_20 := GL(2,Integers(20));
+sgl := Subgroups(gl_20:OrderMultipleOf := #g1_20_chi);
+sgl := {@x`subgroup^i: i in Transversal(gl_20,x`subgroup), x in sgl|g1_20_chi subset x`subgroup^i@};
+sg20 := [PSL2Subgroup(i): i in sgl];
+mss := [ModularSymbols(i,3): i in sg20];
+css := [CuspidalSubspace(i): i in mss];
+assert {*Dimension(i): i in css*} eq {*0^^11, 4, 8, 12*};
+// 12 is what we already had.
+ind4 := rep{x: x in [1..#css]|Dimension(css[x]) eq 4};
+// This one is no use; it only has the oldforms.
+assert CharacteristicPolynomial(HeckeOperator(css[ind4],7)) eq (s^2-4*s+8)^2;
+ind8 := rep{x: x in [1..#css]|Dimension(css[x]) eq 8};
+// This one has the oldform and the newform once each.
+// So it is the only candidate.
+assert CharacteristicPolynomial(HeckeOperator(css[ind8],7)) eq (s^2-4*s+8)^2*(s^2+14*s+98)^2;
+
+// We note that the corresponding group with -I put in is just Gamma_+-(10).
+gl_10 := GL(2,Integers(10));
+red10 := hom<gl_20->gl_10|[Eltseq(gl_20.i): i in [1..Ngens(gl_20)]]>;
+g1_10 := sub<gl_10|[1,0,0,3],[1,0,0,7],[1,1,0,1]>;
+// The group is defined mod 10 ...
+assert Kernel(red10) subset sub<gl_20|sgl[ind8],[-1,0,0,-1]>;
+// ... and it is the same as Gamma_1(10).
+assert red10(sgl[ind8]) eq sub<gl_10|red10(sgl[ind8]),[-1,0,0,-1]>;
+
+// So the corresponding modular curve is the same.  However, the twist will
+// have to be different.  We enter the equation from the LMFDB ...
+P1<x,y> := ProjectiveSpace(Q,1);
+jmap := map<P1->P1|[-1/2^5*(x^12+32*x^11*y+416*x^10*y^2+2880*x^9*y^3+11520*x^8*y^4+18432*x^7*y^5-65536*x^6*y^6-442368*x^5*y^7-983040*x^4*y^8-655360*x^3*y^9+1048576*x^2*y^10+2097152*x*y^11+1048576*y^12)^3,y^5*x^10*(x+2*y)^5*(x+4*y)^10*(x^2+2*x*y-4*y^2)*(x^2+12*x*y+16*y^2)^2]>;
+// ... and find the minimal twist.
+ell,mm,mm2 := make_curve(jmap);
+// Since this is the same as the curve of level 10, it should carry the
+// modular form of level 10.  Let's make sure.
+assert BettiNumber(mm2,2) eq 34;
+cts := [<p,NumberOfPointsOnSurface(ChangeRing(mm2,FunctionField(GF(p))),1)>: p in PrimesInInterval(10,100)];
+rct := [<x[1],(x[2]-1) mod x[1]>: x in cts];
+assert forall{i: i in rct|exists{s: s in [1,-1]|Valuation(i[2]-s*Trace(Coefficient(cf_3_10,i[1])),i[1]) gt 0}};
+
+// Now we want to find the twist that also has the form of level 20.
+// The geometric genus should be 4.
+// First we make the symmetry more obvious by translation.
+ch2 := BaseChange(mm2,hom<Qs->Qs|s-2>);
+li := LocalInformation(ch2);
+ins := [Numerator(Qs!Minimum(i[1])): i in LocalInformation(ch2)];
+wts := [Degree(i[1]): i in LocalInformation(ch2)];
+Qn := PolynomialRing(Q,wts);
+// We put 4 here because we need 4 starred fibres.
+mons := [m: m in MonomialsOfWeightedDegree(Qn,4)|IsSquarefree(m)];
+tws := [QuadraticTwist(ch2,Evaluate(m,ins)): m in mons];
+ctss := [[<p,NumberOfPointsOnSurface(ChangeRing(t,FunctionField(GF(p))),1)>: p in PrimesInInterval(10,100)]: t in tws];
+rcts := [[<x[1],(x[2]-1) mod x[1]>: x in c]: c in ctss];
+
+// By good luck we already have the correct twist.
+goodind := rep{x: x in [1..#mons]|forall{i: i in rcts[x]|Valuation(i[2]-Trace(Coefficient(cf_3_10,i[1]))-Trace(Coefficient(cf_3_20,i[1])),i[1]) gt 0}};
+tw := tws[goodind];
+// Now, what could we do to cut out the oldform?
+// Looking at the local information, it's clear that the outer automorphism
+// group is contained in <s -> -4/s> (since it has to preserve all the bad
+// fibre types).
+bc := BaseChange(tw,hom<Qs->Qs|-4/s>);
+assert IsIsomorphic(tw,bc);
+// Now, if we could lift this to an automorphism of order 2 of the total
+// space, then the quotient by it, or by its product with the negation map,
+// would almost certainly be what we're looking for.
+
+bctw := BaseChange(tw,hom<Qs->Qs|-4/s>);
+P21 := ProductProjectiveSpace(Q,[2,1]);
+h := hom<CoordinateRing(AmbientSpace(tw))->c|hom<Qs->c|c.4/c.5>,c.1,c.2,c.3> where c is FieldOfFractions(CoordinateRing(P21));
+tw21 := Surface(P21,Numerator(h(DefiningPolynomial(tw))));
+bc21 := Surface(P21,Numerator(h(DefiningPolynomial(bctw))));
+_,match := IsIsomorphic(tw,bctw);
+
+// We make the automorphism of the total space.
+// First the isomorphism with the base change that preserves the parameter ...
+match21 := map<tw21->bc21|[h(i): i in DefiningPolynomials(match)] cat [P21.4,P21.5]>;
+// ... then the one that changes s to 4/s.
+unmatch21 := map<bc21->tw21|[P21.1,P21.2,P21.3,-4*P21.5,P21.4]>;
+aut21 := Expand(match21*unmatch21);
+aut212 := Expand(aut21^2);
+// Unfortunately its square is negation, so it has order 4.
+assert aut212 eq map<tw21->tw21|[P21.1,-P21.2,P21.3,P21.4,P21.5]>;
+// I'm stuck.

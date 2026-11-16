@@ -1,0 +1,58 @@
+// Two possibilities:
+// A2 A8 E8
+// A2^2 A8 E6 with 3-torsion.
+// The first one will be made from E-K I9III*.
+
+Q4<a1,b2,b3,e> := FunctionField(Q,4);
+Q4t<t> := FunctionField(Q4);
+b1 := b3 + a1; 
+a2 := 2*b2+b1^2-2*a1*b1+a1^2;
+c1 := 2*b1-a1;
+
+a := 1+a1*t+a2*t^2;
+b := e*(1+b1*t+b2*t^2);
+c := e^2*(1+c1*t);
+
+ai := [0,a,0,2*b*t^3,c*t^6];
+ec := EllipticCurve(ai);
+// Now specialize to E8.
+
+Q3<a1,b3,e> := FunctionField(Q,3);
+Q3t<t> := FunctionField(Q3);
+b2 := 0;
+b1 := b3 + a1; 
+a2 := 2*b2+b1^2-2*a1*b1+a1^2;
+c1 := 2*b1-a1;
+
+a := 1+a1*t+a2*t^2;
+b := e*(1+b1*t+b2*t^2);
+c := e^2*(1+c1*t);
+
+ai := [0,a,0,2*b*t^3,c*t^6];
+ec := EllipticCurve(ai);
+// now we need it to vanish 3 times at 1.
+ders := [Discriminant(ec)];
+for i in [1,2] do Append(~ders,Derivative(ders[i])); end for;
+conds := [Numerator(Evaluate(i,1)): i in ders];
+A3 := Spec(Parent(Numerator(a1)));
+sch := Scheme(A3,conds);
+pc := PrimeComponents(sch);
+// interestingly we get one component over a cubic field corresponding to III
+// and a rational point for I3.
+ec1 := BaseChange(ec,hom<Q3t->Qs|hom<Q3->Qs|-4,-4,-64/27>,s>);
+
+// For the second one, we take the usual form y^2 + fxy + gy = x^3.
+// In order to make I9 we take degree 3.  To make IV* we make f vanish
+// once and g twice at 0.
+Q2<b,c> := FunctionField(Q,2);
+Q2t<t> := FunctionField(Q2);
+ai := [b*t+c*t^2,0,t^2*(t-1),0,0];
+ec := EllipticCurve(ai);
+// we now need another triple root.
+A2 := Spec(Parent(Numerator(b)));
+P11 := ProductProjectiveSpace(Q,[1,1]);
+P4 := ProjectiveSpace(Q,4);
+prod13 := Image(map<P11->P4|Coefficients(Polynomial([P11.1,P11.2])*Polynomial([P11.3,P11.4])^3)>);
+to4 := map<A2->P4|Coefficients(Numerator(Q2t!Minimum(rep{x[1]: x in LocalInformation(ec)|x[5] eq KodairaSymbol("I1")})))>;
+sch := prod13@@to4;
+// The surfaces are defined over Q(2^(1/3)), not Q, so we can't do it.

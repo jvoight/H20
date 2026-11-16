@@ -1,0 +1,129 @@
+load "count_nr.mag";
+x0_15 := EllipticCurve([1,1,1,-10,-10]);
+assert Conductor(x0_15) eq 15;
+P2<x,y,z> := AmbientSpace(x0_15);
+P1 := ProjectiveSpace(Q,1);
+// from LMFDB
+jmap := map<x0_15->P1|[7*x^2*y^8-168*x^2*y^7*z+8649*x^2*y^6*z^2+71386*x^2*y^5*z^3-1633410*x^2*y^4*z^4+47996469*x^2*y^3*z^5+121210709*x^2*y^2*z^6+524262998*x^2*y*z^7+3323839242*x^2*z^8+x*y^9-79*x*y^8*z-2443*x*y^7*z^2+12013*x*y^6*z^3-2439265*x*y^5*z^4-13029558*x*y^4*z^5-137755648*x*y^3*z^6-1035181711*x*y^2*z^7+543404161*x*y*z^8+13648916130*x*z^9-582*y^8*z^2+34523*y^7*z^3-9219*y^6*z^4+6428904*y^5*z^5+108506910*y^4*z^6-371358519*y^3*z^7-3090420549*y^2*z^8-3467643238*y*z^9+10325076888*z^10,z^2*(12*x^2*y^6-189*x^2*y^5*z-900*x^2*y^4*z^2+2847*x^2*y^3*z^3+61647*x^2*y^2*z^4+260822*x^2*y*z^5+1943616*x^2*z^6-4*x*y^7+7*x*y^6*z+412*x*y^5*z^2-2863*x*y^4*z^3-11906*x*y^3*z^4+337150*x*y^2*z^5+1639558*x*y*z^6+8447100*x*z^7-y^8+46*y^7*z-21*y^6*z^2-2147*y^5*z^3+2767*y^4*z^4+53165*y^3*z^5+782155*y^2*z^6+1378736*y*z^7+6503484*z^8)]>;
+
+j := P1.1@@jmap/P1.2@@jmap;
+ff<e1,e2> := FunctionField(x0_15);
+Qs<s> := FunctionField(Q);
+// this is the function field of the elliptic curve, defined as an
+// extension of Q(s) so that things like LocalInformation work
+eff := ext<Qs|Polynomial([-s^3-s^2+10*s+10,s+1,1])>;
+toff := hom<ff->eff|s,eff.1>;
+fromff := hom<eff->ff|hom<Qs->ff|e1>,e2>;
+// some arbitrary choice of elliptic curve with the correct j-invariant
+ee := EllipticCurveWithjInvariant(Evaluate(j,[e1,e2,1]));
+eeff := BaseChange(ee,toff);
+li := LocalInformation(eeff);
+// spurious places of bad reduction to twist away
+d4 := [x[1]: x in li|x[5] eq KodairaSymbol("I0*")];
+
+pls := [Place([fromff(i): i in Generators(Ideal(p))]): p in d4];
+Sort(~pls,func<x,y|Degree(x)-Degree(y)>);
+
+mw,mwto := MordellWeilGroup(x0_15);
+plq := [Place(mwto(i*mw.1+j*mw.2)): i in [0,1], j in [0..3]];
+
+// assert {*x[1]^^x[2]: x in KodairaSymbols(eeff)*} eq {*KodairaSymbol(i): i in ["I1","I3","I5","I15"]*}; // false
+// Again we have garbage to twist away.
+// Come to think of it, it's not quite clear how.
+dd := Decomposition(Divisor(fromff(Discriminant(eeff))));
+// this is another way to find the spurious places of bad reduction
+dsum := &+[rep{-x[2] div 6: x in dd|x[1] eq p}*p: p in pls];
+// we find some functions supported there and on the torsion
+goodp := [x: x in plq|IsPrincipal(dsum-(Degree(dsum)-2)*plq[1]-2*x)];
+prs := [x where _,x is IsPrincipal(dsum-(Degree(dsum)-2)*plq[1]-2*p): p in goodp];
+// these are the four possible twists.  They all have reduction types
+// I15, I5, I3, I1 at one place each.
+tws := [QuadraticTwist(eeff,toff(i)): i in prs];
+
+sum3s := [{x+y-z-p: x,y,z in plq|p notin [x,y,z] and IsPrincipal(x+y-z-p)}: p in goodp];
+ch_fns := [[1/x^2 where _,x is IsPrincipal(s): s in sum]: sum in sum3s];
+// this is an isomorphic surface where the discriminant doesn't have a
+// pole at the same point, so that we can sensibly count the points there
+alts := [[QuadraticTwist(tws[i],toff(c)): c in ch_fns[i]]: i in [1..4]];
+// these are just alternative equations; since the coordinate ring of an
+// elliptic curve isn't a PID, we can't expect a global minimal model
+assert forall{i: j in alts[i], i in [1..4]|IsIsomorphic(tws[i],j)};
+assert forall{e: e in tws|{*x[1]^^x[2]: x in KodairaSymbols(e)*} eq {*KodairaSymbol(i): i in ["I1","I3","I5","I15"]*}};
+
+// I see nothing in the above that justifies saying that one of these four
+// curves is the universal elliptic curve.  But logically it must be the one
+// that actually gives the modular form we want.
+ctss := [];
+ps := PrimesInInterval(10,100);
+for i in [1..4] do try 
+    cts := [count_points_surface([reduce_p(m,p): m in [tws[i]] cat alts[i]],ChangeRing(x0_15,GF(p))): p in ps];
+    Append(~ctss,cts);
+  catch e; end try;
+end for;
+
+cf2 := Newforms(CuspForms(15))[1,1];
+// oops
+// cf3 := Newforms(CuspForms(KroneckerCharacter(-15),3))[1,1];
+cf3 := Newforms(CuspForms(DirichletGroup(15)!KroneckerCharacter(-3),3))[1,1];
+assert forall{i: i in [1..#ps]|exists{s: s in [1,-1]|Valuation(ctss[3,i]-1+s*Trace(Coefficient(cf3,ps[i]))+Coefficient(cf2,ps[i]),ps[i]) gt 0}};
+
+// the third of these works.  We always have 
+// ctss[3,i]-1 +- the p_i th coefficient of the weight-3 cusp form
+// + the coefficient of the weight-2 cusp form = 0 mod p
+// I don't yet have the rule for +- but it looks like half each.
+
+// junk, ignore
+/*
+function count_points_surface(models,bc)
+  li := LocalInformation(models[1]);
+  fldp := BaseRing(models[1]);
+  bp := BaseRing(fldp);
+  f0 := ConstantField(fldp);
+  pts := RationalPoints(bc);
+  ffbc := FunctionField(bc);
+  bbc := BaseRing(ffbc);
+  // to_fldp := hom<ffbc->fldp|fldp.1,bp.1>;
+  // to_ffbc := hom<fldp->ffbc|hom<bp->ffbc|ffbc.2>,ffbc.1>;
+  to_fldp := hom<ffbc->fldp|bp.1,fldp.1>;
+  to_ffbc := hom<fldp->ffbc|hom<bp->ffbc|ffbc.1>,ffbc.2>;
+  pls := [Place(i): i in pts];
+  pls_f0 := Places(fldp,1);
+  pls2 := [];
+  for i in pls_f0 do try
+      Append(~pls2,Place([to_ffbc(g): g in Generators(Ideal(i))]));
+    catch e
+      Append(~pls2,Place(bc![0,1,0]));
+    end try;
+  end for;
+  assert Set(pls2) eq Set(pls);
+  // but now pls2 is in the same order as pls
+  
+  npts := [];
+  ecs := [];
+  for i in pls_f0 do
+    if exists(li_i){l: l in li|l[1] eq i} then
+      // there must be an easier way
+      n := rep{x: x in [1..10^#Sprintf("%o",li_i[5])]|li_i[5] eq KodairaSymbol("I"*Sprintf("%o",x))};
+      ct := (li_i[6] select n*#f0 else (2-n mod 2)*(#f0+1)+(IsOdd(n) select 1 else 0));
+      Append(~npts,ct);
+    else
+      // !! assumes bad reduction at infinity
+      gens := Generators(Ideal(i));
+      val1 := rep{fldp.1-i: i in gens|fldp.1-i in f0};
+      val2 := rep{bp.1-i: i in gens|bp.1-i in f0};
+      red := hom<fldp->f0|hom<BaseRing(fldp)->f0|val2>,val1>;
+      found := false;
+      for m in models do
+        try ec := EllipticCurve(BaseChange(m,red));
+            found := true;
+            Append(~npts,#ec);
+            Append(~ecs,ec);
+            break m;
+        catch e; end try;
+      end for;
+      assert found;
+    end if;
+  end for;
+  return &+npts,pls,npts;
+end function;
+*/

@@ -1,0 +1,33 @@
+// We have two possibilities for disc 15 with at most one starred fibre:
+// A2A9E7, torsion of order 2
+// A14A2A2, torsion of order 3
+
+// The first of these doesn't necessarily help us here, because we
+// have no twists of square discriminant.  But let's find it anyway.
+// Well, it's already in Schutt, #276, so not much to do.
+X321 := EllipticCurve([-3*(s-1)^3*(s-4),-2*(s-1)^5*(s+8)]);
+bc := BaseChange(X321,hom<Qs->Qs|64/((1-s)^3*(9*s^2-33*s+64))>);
+// twist away the I0*
+md1 := MinimalDegreeModel(QuadraticTwist(bc,s^2-10/3*s+5));
+ec1 := QuadraticTwist(Image(map<md1->AmbientSpace(md1)|[md1.1-Roots(DivisionPolynomial(ec1,2))[1,1]*md1.3,md1.2,md1.3]>),-1/2);
+// just to make the equation nice (and to split the I_3 fibre)
+
+// For the second, we start with the general form of a curve with a point
+// of order 3, y^2 + f_2 xy + f_6 y = y^3.
+// By taking f_6 = s^5(s-1) we get an I15 and an I3, and then we need to
+// choose f_2 to get an I_3 from the rest.
+Q3<a,b,c> := FunctionField(Q,3);
+Q3t<t> := FunctionField(Q3);
+ai := [a+b*t+c*t^2,0,t^5*(t-1),0,0];
+ec := EllipticCurve(ai);
+// By looking at the coefficients:
+Qs<s> := FunctionField(Q);
+ai := [-1/3-s+3*s^2,0,s^5*(s-1),0,0];
+ec := EllipticCurve(ai);
+// with I15 at 0, I3 at 1 and infinity
+// would it be cleaner if ...?
+ch := BaseChange(ec,hom<Qs->Qs|1/s>);
+aich := aInvariants(ch);
+ec2 := EllipticCurve([aich[1]*s^2,0,aich[3]*s^6,0,0]);
+
+ecs_disc_15 := [ec1,ec2];

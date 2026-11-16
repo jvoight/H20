@@ -1,0 +1,6 @@
+// In discriminant 7 the only possibility is the surface with
+// three I7 and I1 fibres and 7-torsion.  This is the universal elliptic
+// curve with a point of order 7 and an equation is well known.
+Qs<s> := FunctionField(Q);
+ec1 := EllipticCurve([(s^2 + s - 1)/s^2, (s^2 - 2*s + 1)/s^3, (s^2 - 2*s + 1)/s^3, 0, 0]);
+ecs_disc7 := [ec1];

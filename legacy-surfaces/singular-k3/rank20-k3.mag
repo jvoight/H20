@@ -1,0 +1,19 @@
+// K3 surfaces of rank 20 with fibration of rank 0, sorted by discriminant
+// and possible twists
+Qs<s> := FunctionField(Q);
+
+ais_3 := [[0,2*s^3+4,0,s^6,0], // I3* I12 I1 I1 I1
+          [0,2*s^3+2,0,s^6-2*s^3+1], // I3* I4 I4 I4 I3
+          [0,2*s^4+4*s,0,s^8,0], // I12* I3 I1 I1 I1
+          [0,0,0,0,(s^2-s)^4]]; // IV* IV* IV*
+
+tws_3 := [[s*(s+1),s^2-s+1],
+          [s*(s-1),s^2+s+1],
+          [s+1,s^2-s+1],
+          []];
+
+ais_4 := [[0,0,0,(-27*(s^8-12*s^6+14*s^4+12*s^2+1)),54*(s^12-18*s^10+75*s^8+75*s^4+18*s^2+1)], // I10 I10 I1 I1 I1 I1
+          [1,s^4,s^4,0,0], // I16 I4 I1 I1 I1 I1
+          [0,s^3-3/2*s^2+1/4,0,1/64,0], // I12* I2 I2 I1 I1
+          [s^2+3,0,1,0,0], // I18 I2 4 x I1
+;

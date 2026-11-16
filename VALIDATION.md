@@ -27,3 +27,27 @@ was not rerun during this import; its existing action data and provenance
 are retained, and the exact comparison with the complete census was rerun.
 The historical surface summary files were preserved without mathematical
 reverification.
+
+## Additional surface and candidate code
+
+The subsequently supplied `H20/Code/` and `newvers/202-candidates/` folders
+contributed 26 and 7 original files respectively. All 33 imported files
+matched their source SHA-256 checksums. Editor backups and macOS metadata
+were excluded. Each destination directory contains its import manifest.
+
+The two candidate-package checks were rerun with Magma 2.30-1:
+
+| Check | Result |
+| --- | --- |
+| `202-candidates/scripts/qm_candidates.m` | All nine rational rotation groups, element-order counts, and symbolic tensor, Asai, and trace identities passed. |
+| `202-candidates/scripts/example_S1_9.m` | All 25 complete Euler polynomials matched at primes at most 101 other than 3, including 2. |
+
+Both complete logs contained the expected `PASS` line and no runtime,
+assertion, syntax, or user errors. Their output matched the supplied logs
+exactly after normalizing the Magma version string. Fresh logs are saved
+under `202-candidates/results/validation-magma-2.30-1/`; the original logs
+remain unchanged.
+
+The legacy surface calculations were preserved without mathematical
+reverification. Their README records known missing dependencies and
+unfinished scripts; they are not claimed to form a passing test suite.

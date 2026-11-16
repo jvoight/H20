@@ -1,0 +1,9 @@
+{
+  "README.txt": "03237484286df23437ea926929fd060a7ed168d5d06ac9b555d3457130489300",
+  "classification-notes.tex": "4c57b338f9ff41c227b04ab963bdd7b61968973b4e684cf8682a656c1dd5484f",
+  "results/example_S1_9.log": "dac869b0f181f490a28db343b733f92765442dc44577defddb4f5ce46c25d95a",
+  "results/qm_candidates.log": "cbd05b96c702ca8968bc1d98ac168a501867c6b3ded61d475994b62232ba527f",
+  "scripts/euler_tools.m": "6f911b553fdb2ce457db21c909ed8421e60a30e19a9b37301495fdc2b89ddec3",
+  "scripts/example_S1_9.m": "3f9390ab7d5218286a2e8687f25829462c34689228997b676be7a5aa9b46e8e9",
+  "scripts/qm_candidates.m": "08b4c8df3a16e5be75c301ac5f34302c7ac0f4993b966c5df2a46029810ef35b"
+}

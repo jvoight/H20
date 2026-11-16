@@ -1,0 +1,12 @@
+Loading "scripts/euler_tools.m"
+group,order,n1,n2,n3,n4,n6,trace_zero_density
+C2,2,1,1,0,0,0,1/2
+C4,4,1,1,0,2,0,1/4
+C6,6,1,1,2,0,2,1/6
+D2,4,1,3,0,0,0,3/4
+D3,6,1,3,2,0,0,1/2
+D4,8,1,5,0,2,0,5/8
+D6,12,1,7,2,0,2,7/12
+A4,12,1,3,8,0,0,1/4
+S4,24,1,9,8,6,0,3/8
+PASS: nine rational rotation groups; tensor, Asai, and trace identities.

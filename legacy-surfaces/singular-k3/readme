@@ -1,0 +1,16 @@
+I am using this directory for equations of rank-0 fibrations on K3 surfaces
+of rank 20, sorted by discriminant and restricted to the ones that are defined
+over Q.  Each file defines the fibrations of a given discriminant in a
+variable ecs_disc*.  The twists that are rational 202 surfaces can be found
+using the function twists in good_twists.mag.  Standard Magma functions
+can be used for the L-polynomials, but I have not collected these.  I have
+made no attempt to find modular forms for most of them.
+
+Many of these are already in Schutt's paper, but some of them are found
+in other ways: when the torsion is trivial one can try to specialize
+constructions in Elkies-Kumar, when it is not one can use normal forms
+for elliptic curves with torsion, etc.
+
+Note that there can be some tricky cases where there are two pairs of fibres
+of the same type and one has to choose which pair is defined over Q.
+This may happen at level 36 with I8^* I4I4I3I3, for example.
