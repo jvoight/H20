@@ -11,7 +11,7 @@ genus 2 and modular forms* by Asher Auel, Adam Logan, and John Voight.
 | [`rational-lifts/`](rational-lifts/README.txt) | 61 geometric classes admitting determinant-surjective adelic lifts; 457 finite lifts at the exact geometric levels and 636 at the proof moduli. |
 | [`noncongruence-enumeration/`](noncongruence-enumeration/README.txt) | All 47,244 classes, including 47,180 noncongruence classes; permutation actions, an independent Magma audit, and explicit examples. |
 | [`202-candidates/`](202-candidates/README.md) | Nine rational quaternionic rotation groups, exact Euler-polynomial utilities, and 25 full Euler-factor comparisons for S₁(9). |
-| [`verification/`](verification/README.md) | Reconstructed Herfurtner checks: 30 full Euler polynomials; modular dimensions through level 40, cusp widths, and quadratic refinements. |
+| [`verification/`](verification/README.md) | Reconstructed Herfurtner checks; modular dimensions, cusp widths, and quadratic refinements; the rational rank-four QM counterexample 289.3.e.o. |
 | [`legacy-surfaces/`](legacy-surfaces/README.md) | Original surface calculations, singular K3 models, exploratory scripts, and saved output from the authors' Code directory. |
 | [`historical-data/`](historical-data/README.md) | Original numerical summary tables for quadratic twists and double and triple covers. |
 
